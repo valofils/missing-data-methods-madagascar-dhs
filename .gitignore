@@ -1,0 +1,19 @@
+# DHS terms of use: raw and record-level microdata must never be committed
+data/raw/
+data/derived/
+*.zip
+*.dta
+*.DTA
+*.sav
+*.SAV
+*.rds
+
+# Published reports kept locally for validation (large binaries; values transcribed to data/reference/)
+*.pdf
+
+# R / renv
+.Rhistory
+.RData
+.Rproj.user/
+renv/library/
+renv/staging/

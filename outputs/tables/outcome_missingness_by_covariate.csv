@@ -1,0 +1,97 @@
+"covariate","level","outcome","pct_missing","se","rao_scott_p"
+"region","Antananarivo","haz_miss",5.7,1.3,1.77e-06
+"region","Analamanga (excl. Antananarivo)","haz_miss",2.9,1.4,1.77e-06
+"region","Vakinankaratra","haz_miss",3.8,1.3,1.77e-06
+"region","Itasy","haz_miss",1.2,0.7,1.77e-06
+"region","Bongolava","haz_miss",3,1.2,1.77e-06
+"region","Haute Matsiatra","haz_miss",3.2,1.3,1.77e-06
+"region","Amoron'i Mania","haz_miss",2.4,1.2,1.77e-06
+"region","Vatovavy Fitovinany","haz_miss",8.8,2.5,1.77e-06
+"region","Ihorombe","haz_miss",1.1,0.7,1.77e-06
+"region","Atsimo Atsinanana","haz_miss",1.8,0.8,1.77e-06
+"region","Atsinanana","haz_miss",3.9,1.7,1.77e-06
+"region","Analanjirofo","haz_miss",2.1,0.9,1.77e-06
+"region","Alaotra Mangoro","haz_miss",3.2,1.3,1.77e-06
+"region","Boeny","haz_miss",1.5,0.7,1.77e-06
+"region","Sofia","haz_miss",2.7,1,1.77e-06
+"region","Betsiboka","haz_miss",4.1,1.9,1.77e-06
+"region","Melaky","haz_miss",3.1,1.3,1.77e-06
+"region","Atsimo Andrefana","haz_miss",6.3,1.6,1.77e-06
+"region","Androy","haz_miss",9.9,2.2,1.77e-06
+"region","Anosy","haz_miss",1.8,0.9,1.77e-06
+"region","Menabe","haz_miss",2.3,1,1.77e-06
+"region","Diana","haz_miss",3.7,1.7,1.77e-06
+"region","Sava","haz_miss",9.8,2.6,1.77e-06
+"region","Antananarivo","whz_miss",5.6,1.4,0.192
+"region","Analamanga (excl. Antananarivo)","whz_miss",3.7,1.5,0.192
+"region","Vakinankaratra","whz_miss",4.5,1.3,0.192
+"region","Itasy","whz_miss",1.6,0.7,0.192
+"region","Bongolava","whz_miss",3,1.2,0.192
+"region","Haute Matsiatra","whz_miss",1,0.5,0.192
+"region","Amoron'i Mania","whz_miss",2.8,1,0.192
+"region","Vatovavy Fitovinany","whz_miss",5.3,1.7,0.192
+"region","Ihorombe","whz_miss",1.1,0.7,0.192
+"region","Atsimo Atsinanana","whz_miss",1.7,0.8,0.192
+"region","Atsinanana","whz_miss",2.6,1.6,0.192
+"region","Analanjirofo","whz_miss",1.7,0.8,0.192
+"region","Alaotra Mangoro","whz_miss",2.9,1.3,0.192
+"region","Boeny","whz_miss",1.5,0.7,0.192
+"region","Sofia","whz_miss",3.1,0.9,0.192
+"region","Betsiboka","whz_miss",3.7,1.8,0.192
+"region","Melaky","whz_miss",1.8,0.8,0.192
+"region","Atsimo Andrefana","whz_miss",4.7,1.4,0.192
+"region","Androy","whz_miss",3.5,1.5,0.192
+"region","Anosy","whz_miss",1.3,0.8,0.192
+"region","Menabe","whz_miss",1.8,0.9,0.192
+"region","Diana","whz_miss",2.7,1.1,0.192
+"region","Sava","whz_miss",3.8,1.5,0.192
+"residence","Urban","haz_miss",6.3,1,0.00887
+"residence","Rural","haz_miss",3.9,0.4,0.00887
+"residence","Urban","whz_miss",5.2,0.9,0.00202
+"residence","Rural","whz_miss",2.7,0.3,0.00202
+"wealth","Poorest","haz_miss",4.4,0.7,0.616
+"wealth","Poorer","haz_miss",4.9,0.9,0.616
+"wealth","Middle","haz_miss",3.3,0.8,0.616
+"wealth","Richer","haz_miss",3.8,0.8,0.616
+"wealth","Richest","haz_miss",4.8,0.8,0.616
+"wealth","Poorest","whz_miss",2.6,0.5,0.307
+"wealth","Poorer","whz_miss",3.2,0.7,0.307
+"wealth","Middle","whz_miss",2.5,0.7,0.307
+"wealth","Richer","whz_miss",3.3,0.7,0.307
+"wealth","Richest","whz_miss",4.5,0.8,0.307
+"sex","Male","haz_miss",4.2,0.4,0.82
+"sex","Female","haz_miss",4.3,0.5,0.82
+"sex","Male","whz_miss",3,0.4,0.748
+"sex","Female","whz_miss",3.2,0.4,0.748
+"age_grp","<6","haz_miss",3.8,0.7,0.000362
+"age_grp","6-8","haz_miss",2.7,1.2,0.000362
+"age_grp","9-11","haz_miss",2,0.8,0.000362
+"age_grp","12-17","haz_miss",3,0.7,0.000362
+"age_grp","18-23","haz_miss",2.4,0.6,0.000362
+"age_grp","24-35","haz_miss",4.2,0.8,0.000362
+"age_grp","36-47","haz_miss",4.3,0.7,0.000362
+"age_grp","48-59","haz_miss",6.9,0.9,0.000362
+"age_grp","<6","whz_miss",5.3,0.9,0.0502
+"age_grp","6-8","whz_miss",2.5,1.2,0.0502
+"age_grp","9-11","whz_miss",1.7,0.7,0.0502
+"age_grp","12-17","whz_miss",2.1,0.6,0.0502
+"age_grp","18-23","whz_miss",2.4,0.7,0.0502
+"age_grp","24-35","whz_miss",2.8,0.6,0.0502
+"age_grp","36-47","whz_miss",2.9,0.6,0.0502
+"age_grp","48-59","whz_miss",3.8,0.6,0.0502
+"mother_status","Interviewed","haz_miss",2.4,0.3,8.47e-89
+"mother_status","Not de facto","haz_miss",6.1,6.1,8.47e-89
+"mother_status","Interview incomplete","haz_miss",44.6,5,8.47e-89
+"mother_status","Not in household","haz_miss",9.9,1.6,8.47e-89
+"mother_status","Interviewed","whz_miss",1.7,0.2,1.92e-111
+"mother_status","Not de facto","whz_miss",6.9,6.1,1.92e-111
+"mother_status","Interview incomplete","whz_miss",42.4,4.9,1.92e-111
+"mother_status","Not in household","whz_miss",4.5,1.1,1.92e-111
+"mother_edu","None","haz_miss",6.3,1,1.82e-09
+"mother_edu","Primary","haz_miss",2.9,0.4,1.82e-09
+"mother_edu","Secondary+","haz_miss",2.9,0.5,1.82e-09
+"mother_edu","Not in household","haz_miss",9.9,1.6,1.82e-09
+"mother_edu","None","whz_miss",3.2,0.6,0.287
+"mother_edu","Primary","whz_miss",2.6,0.4,0.287
+"mother_edu","Secondary+","whz_miss",3.2,0.5,0.287
+"mother_edu","Not in household","whz_miss",4.5,1.1,0.287

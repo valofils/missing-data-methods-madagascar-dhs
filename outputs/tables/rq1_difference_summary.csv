@@ -1,0 +1,49 @@
+"analysis","method","outcome","level","n_groups","mean_abs_diff_pp","max_abs_diff_pp"
+"Main (flagged = missing)","CCA (outcome + covariates)","sev_stunted","National",1,0.00393311481269443,0.00393311481269443
+"Main (flagged = missing)","CCA (outcome + covariates)","sev_wasted","National",1,0.0557935717749281,0.0557935717749281
+"Main (flagged = missing)","CCA (outcome + covariates)","stunted","National",1,0.120375184900929,0.120375184900929
+"Main (flagged = missing)","CCA (outcome + covariates)","stunted","Subgroups",28,0.271660089878286,0.850541204466353
+"Main (flagged = missing)","CCA (outcome + covariates)","wasted","National",1,0.00063153938757754,0.00063153938757754
+"Main (flagged = missing)","CCA (outcome + covariates)","wasted","Subgroups",28,0.182936325752102,0.69563988149979
+"Main (flagged = missing)","IPW","sev_stunted","National",1,0.0157558797421977,0.0157558797421977
+"Main (flagged = missing)","IPW","sev_wasted","National",1,0.0272735272495674,0.0272735272495674
+"Main (flagged = missing)","IPW","stunted","National",1,0.0239734769041817,0.0239734769041817
+"Main (flagged = missing)","IPW","stunted","Subgroups",28,0.260220457723967,1.56682438775449
+"Main (flagged = missing)","IPW","wasted","National",1,0.00383443774680803,0.00383443774680803
+"Main (flagged = missing)","IPW","wasted","Subgroups",28,0.0913484230121597,0.292317440752029
+"Main (flagged = missing)","MI-PMM","sev_stunted","National",1,0.0158811750741883,0.0158811750741883
+"Main (flagged = missing)","MI-PMM","sev_wasted","National",1,0.00249749558575596,0.00249749558575596
+"Main (flagged = missing)","MI-PMM","stunted","National",1,0.0328902845499712,0.0328902845499712
+"Main (flagged = missing)","MI-PMM","stunted","Subgroups",28,0.134655875007103,0.494731174593134
+"Main (flagged = missing)","MI-PMM","wasted","National",1,0.0186565519222235,0.0186565519222235
+"Main (flagged = missing)","MI-PMM","wasted","Subgroups",28,0.0582230561840681,0.196910266337538
+"Main (flagged = missing)","MI-RF","sev_stunted","National",1,0.0205132179300946,0.0205132179300946
+"Main (flagged = missing)","MI-RF","sev_wasted","National",1,0.00645207692511085,0.00645207692511085
+"Main (flagged = missing)","MI-RF","stunted","National",1,0.0330770280201165,0.0330770280201165
+"Main (flagged = missing)","MI-RF","stunted","Subgroups",28,0.150891284962527,1.05746496650412
+"Main (flagged = missing)","MI-RF","wasted","National",1,0.0287369087754881,0.0287369087754881
+"Main (flagged = missing)","MI-RF","wasted","Subgroups",28,0.0445866087314609,0.154839951733196
+"Sensitivity (flagged excluded)","CCA (outcome + covariates)","sev_stunted","National",1,0.00393311481269443,0.00393311481269443
+"Sensitivity (flagged excluded)","CCA (outcome + covariates)","sev_wasted","National",1,0.0557935717749281,0.0557935717749281
+"Sensitivity (flagged excluded)","CCA (outcome + covariates)","stunted","National",1,0.120375184900929,0.120375184900929
+"Sensitivity (flagged excluded)","CCA (outcome + covariates)","stunted","Subgroups",28,0.271660089878286,0.850541204466353
+"Sensitivity (flagged excluded)","CCA (outcome + covariates)","wasted","National",1,0.00063153938757754,0.00063153938757754
+"Sensitivity (flagged excluded)","CCA (outcome + covariates)","wasted","Subgroups",28,0.182936325752102,0.69563988149979
+"Sensitivity (flagged excluded)","IPW","sev_stunted","National",1,0.0153121739479349,0.0153121739479349
+"Sensitivity (flagged excluded)","IPW","sev_wasted","National",1,0.0208640403015525,0.0208640403015525
+"Sensitivity (flagged excluded)","IPW","stunted","National",1,0.0299060535766955,0.0299060535766955
+"Sensitivity (flagged excluded)","IPW","stunted","Subgroups",28,0.285979841038157,2.00451232719331
+"Sensitivity (flagged excluded)","IPW","wasted","National",1,0.00620257402247226,0.00620257402247226
+"Sensitivity (flagged excluded)","IPW","wasted","Subgroups",28,0.0937372918296504,0.361070393354901
+"Sensitivity (flagged excluded)","MI-PMM","sev_stunted","National",1,0.027270480963093,0.027270480963093
+"Sensitivity (flagged excluded)","MI-PMM","sev_wasted","National",1,0.00815149752340227,0.00815149752340227
+"Sensitivity (flagged excluded)","MI-PMM","stunted","National",1,0.00991915322568815,0.00991915322568815
+"Sensitivity (flagged excluded)","MI-PMM","stunted","Subgroups",28,0.115912728618434,0.446476398460266
+"Sensitivity (flagged excluded)","MI-PMM","wasted","National",1,0.00117422205589435,0.00117422205589435
+"Sensitivity (flagged excluded)","MI-PMM","wasted","Subgroups",28,0.0415581172807437,0.11161049173511
+"Sensitivity (flagged excluded)","MI-RF","sev_stunted","National",1,0.0115428028131905,0.0115428028131905
+"Sensitivity (flagged excluded)","MI-RF","sev_wasted","National",1,0.0028828618782375,0.0028828618782375
+"Sensitivity (flagged excluded)","MI-RF","stunted","National",1,0.0085989658236727,0.0085989658236727
+"Sensitivity (flagged excluded)","MI-RF","stunted","Subgroups",28,0.136577308511149,0.524014928594539
+"Sensitivity (flagged excluded)","MI-RF","wasted","National",1,0.0183569427111019,0.0183569427111019
+"Sensitivity (flagged excluded)","MI-RF","wasted","Subgroups",28,0.0478633876828647,0.171551799320897

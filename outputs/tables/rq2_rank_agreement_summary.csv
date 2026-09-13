@@ -1,0 +1,9 @@
+"analysis","outcome","axis","min_spearman","min_kendall","max_rank_shift","min_topk_overlap","rank1_identical_all_pairs","noise_spearman_median","noise_topk_overlap_median"
+"Main (flagged = missing)","stunted","region",0.993083003952569,0.952569169960474,2,0.8,FALSE,0.925889328063241,0.6
+"Main (flagged = missing)","stunted","wealth",1,1,0,1,TRUE,0.9,1
+"Main (flagged = missing)","wasted","region",0.987154150197628,0.936758893280632,3,0.8,TRUE,0.878458498023715,0.8
+"Main (flagged = missing)","wasted","wealth",1,1,0,1,TRUE,0.9,1
+"Sensitivity (flagged excluded)","stunted","region",0.992094861660079,0.952569169960474,3,0.8,FALSE,0.925889328063241,0.6
+"Sensitivity (flagged excluded)","stunted","wealth",1,1,0,1,TRUE,0.9,1
+"Sensitivity (flagged excluded)","wasted","region",0.987154150197628,0.936758893280632,3,0.8,TRUE,0.877470355731225,0.8
+"Sensitivity (flagged excluded)","wasted","wealth",1,1,0,1,TRUE,0.9,1

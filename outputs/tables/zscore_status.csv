@@ -1,0 +1,10 @@
+"index","status","n","pct"
+"haz_status","flagged",23,0.3
+"haz_status","missing",257,3.8
+"haz_status","valid",6402,95.8
+"waz_status","flagged",4,0.1
+"waz_status","missing",256,3.8
+"waz_status","valid",6422,96.1
+"whz_status","flagged",26,0.4
+"whz_status","missing",178,2.7
+"whz_status","valid",6478,96.9

@@ -1,0 +1,21 @@
+"analysis","method","missing_type","zscore","n_children","imputed_mean","pct_below_m2","pct_below_m3"
+"Main (flagged = missing)","MI-PMM","flagged","haz",23,-1.5254347826087,38.9130434782609,12.1739130434783
+"Main (flagged = missing)","MI-PMM","missing","haz",257,-1.69382684824903,41.011673151751,13.2101167315175
+"Main (flagged = missing)","MI-PMM","observed","haz",6402,-1.63212121212121,39.300218681662,12.933458294283
+"Main (flagged = missing)","MI-PMM","flagged","whz",26,-0.118192307692308,9.42307692307692,0.961538461538462
+"Main (flagged = missing)","MI-PMM","missing","whz",178,-0.493365168539326,8.42696629213483,1.76966292134831
+"Main (flagged = missing)","MI-PMM","observed","whz",6478,-0.476630132757024,7.74930534115468,1.63630750231553
+"Main (flagged = missing)","MI-RF","flagged","haz",23,-1.62582608695652,41.7391304347826,14.5652173913043
+"Main (flagged = missing)","MI-RF","missing","haz",257,-1.65239688715953,40.136186770428,12.5486381322957
+"Main (flagged = missing)","MI-RF","observed","haz",6402,-1.63212121212121,39.300218681662,12.933458294283
+"Main (flagged = missing)","MI-RF","flagged","whz",26,-0.0789423076923077,7.11538461538461,3.07692307692308
+"Main (flagged = missing)","MI-RF","missing","whz",178,-0.472053370786517,7.13483146067416,1.82584269662921
+"Main (flagged = missing)","MI-RF","observed","whz",6478,-0.476630132757024,7.74930534115468,1.63630750231553
+"Sensitivity (flagged excluded)","MI-PMM","missing","haz",257,-1.65400389105058,40.272373540856,13.5992217898833
+"Sensitivity (flagged excluded)","MI-PMM","observed","haz",6402,-1.63212121212121,39.300218681662,12.933458294283
+"Sensitivity (flagged excluded)","MI-RF","missing","haz",257,-1.69031712062257,41.3813229571984,13.7937743190661
+"Sensitivity (flagged excluded)","MI-RF","observed","haz",6402,-1.63212121212121,39.300218681662,12.933458294283
+"Sensitivity (flagged excluded)","MI-PMM","missing","whz",178,-0.469558988764045,8.00561797752809,1.71348314606742
+"Sensitivity (flagged excluded)","MI-PMM","observed","whz",6478,-0.476630132757024,7.74930534115468,1.63630750231553
+"Sensitivity (flagged excluded)","MI-RF","missing","whz",178,-0.478761235955056,7.6685393258427,1.65730337078652
+"Sensitivity (flagged excluded)","MI-RF","observed","whz",6478,-0.476630132757024,7.74930534115468,1.63630750231553

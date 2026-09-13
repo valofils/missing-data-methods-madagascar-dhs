@@ -1,0 +1,6 @@
+"check","pass"
+"HAZ within [-6, 6]",TRUE
+"WAZ within [-6, 5]",TRUE
+"WHZ within [-6, 5]",TRUE
+"no residual codes >= 9996",TRUE
+"weights scaled (max < 100)",TRUE

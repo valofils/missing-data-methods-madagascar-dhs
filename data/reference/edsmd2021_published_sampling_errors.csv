@@ -1,0 +1,54 @@
+axis,group,outcome,pub_prop,pub_lo_2se,pub_hi_2se,pub_se,table
+National,National,stunted,0.398,,,0.009,B.2
+National,National,wasted,0.077,,,0.004,B.2
+National,National,underweight,0.234,,,0.008,B.2
+Residence,Urban,stunted,0.355,0.322,0.389,,B.3
+Residence,Urban,wasted,0.079,0.056,0.103,,B.3
+Residence,Rural,stunted,0.406,0.385,0.427,,B.4
+Residence,Rural,wasted,0.076,0.067,0.086,,B.4
+Region,Antananarivo,stunted,0.440,0.389,0.492,,B.5
+Region,Antananarivo,wasted,0.037,0.016,0.058,,B.5
+Region,Analamanga (excl. Antananarivo),stunted,0.483,0.400,0.567,,B.6
+Region,Analamanga (excl. Antananarivo),wasted,0.051,0.017,0.085,,B.6
+Region,Vakinankaratra,stunted,0.519,0.431,0.607,,B.8
+Region,Vakinankaratra,wasted,0.041,0.011,0.072,,B.8
+Region,Itasy,stunted,0.516,0.425,0.606,,B.9
+Region,Itasy,wasted,0.039,0.017,0.062,,B.9
+Region,Bongolava,stunted,0.376,0.301,0.451,,B.10
+Region,Bongolava,wasted,0.074,0.045,0.102,,B.10
+Region,Haute Matsiatra,stunted,0.492,0.417,0.567,,B.11
+Region,Haute Matsiatra,wasted,0.024,0.000,0.058,,B.11
+Region,Amoron'i Mania,stunted,0.491,0.413,0.568,,B.12
+Region,Amoron'i Mania,wasted,0.026,0.009,0.043,,B.12
+Region,Vatovavy Fitovinany,stunted,0.457,0.382,0.532,,B.13
+Region,Vatovavy Fitovinany,wasted,0.102,0.069,0.135,,B.13
+Region,Ihorombe,stunted,0.326,0.255,0.398,,B.14
+Region,Ihorombe,wasted,0.052,0.021,0.082,,B.14
+Region,Atsimo Atsinanana,stunted,0.485,0.429,0.541,,B.15
+Region,Atsimo Atsinanana,wasted,0.124,0.092,0.156,,B.15
+Region,Atsinanana,stunted,0.376,0.307,0.445,,B.16
+Region,Atsinanana,wasted,0.086,0.041,0.131,,B.16
+Region,Analanjirofo,stunted,0.362,0.279,0.445,,B.17
+Region,Analanjirofo,wasted,0.113,0.064,0.161,,B.17
+Region,Alaotra Mangoro,stunted,0.449,0.376,0.522,,B.18
+Region,Alaotra Mangoro,wasted,0.037,0.012,0.063,,B.18
+Region,Boeny,stunted,0.288,0.214,0.363,,B.19
+Region,Boeny,wasted,0.124,0.075,0.174,,B.19
+Region,Sofia,stunted,0.281,0.199,0.364,,B.20
+Region,Sofia,wasted,0.098,0.053,0.143,,B.20
+Region,Betsiboka,stunted,0.296,0.232,0.359,,B.21
+Region,Betsiboka,wasted,0.073,0.033,0.114,,B.21
+Region,Melaky,stunted,0.223,0.188,0.258,,B.22
+Region,Melaky,wasted,0.059,0.021,0.097,,B.22
+Region,Atsimo Andrefana,stunted,0.267,0.201,0.334,,B.23
+Region,Atsimo Andrefana,wasted,0.068,0.035,0.102,,B.23
+Region,Androy,stunted,0.453,0.404,0.502,,B.24
+Region,Androy,wasted,0.152,0.101,0.202,,B.24
+Region,Anosy,stunted,0.468,0.382,0.555,,B.25
+Region,Anosy,wasted,0.099,0.066,0.132,,B.25
+Region,Menabe,stunted,0.349,0.293,0.405,,B.26
+Region,Menabe,wasted,0.067,0.016,0.118,,B.26
+Region,Diana,stunted,0.217,0.138,0.295,,B.27
+Region,Diana,wasted,0.078,0.040,0.117,,B.27
+Region,Sava,stunted,0.310,0.240,0.379,,B.28
+Region,Sava,wasted,0.095,0.051,0.139,,B.28

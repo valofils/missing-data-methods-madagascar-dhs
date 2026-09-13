@@ -1,0 +1,81 @@
+"analysis","outcome","axis","method_a","method_b","spearman","kendall","max_rank_shift","n_groups_rank_changed","topk_overlap","same_rank1"
+"Main (flagged = missing)","stunted","region","CCA","CCA (outcome + covariates)",0.99802371541502,0.984189723320158,1,4,0.8,TRUE
+"Main (flagged = missing)","stunted","region","CCA","IPW",0.995059288537549,0.968379446640316,2,7,1,FALSE
+"Main (flagged = missing)","stunted","region","CCA","MI-PMM",1,1,0,0,1,TRUE
+"Main (flagged = missing)","stunted","region","CCA","MI-RF",0.99901185770751,0.992094861660079,1,2,1,TRUE
+"Main (flagged = missing)","stunted","region","CCA (outcome + covariates)","IPW",0.993083003952569,0.952569169960474,2,11,0.8,FALSE
+"Main (flagged = missing)","stunted","region","CCA (outcome + covariates)","MI-PMM",0.99802371541502,0.984189723320158,1,4,0.8,TRUE
+"Main (flagged = missing)","stunted","region","CCA (outcome + covariates)","MI-RF",0.99703557312253,0.976284584980237,1,6,0.8,TRUE
+"Main (flagged = missing)","stunted","region","IPW","MI-PMM",0.995059288537549,0.968379446640316,2,7,1,FALSE
+"Main (flagged = missing)","stunted","region","IPW","MI-RF",0.99604743083004,0.976284584980237,2,5,1,FALSE
+"Main (flagged = missing)","stunted","region","MI-PMM","MI-RF",0.99901185770751,0.992094861660079,1,2,1,TRUE
+"Main (flagged = missing)","stunted","wealth","CCA","CCA (outcome + covariates)",1,1,0,0,1,TRUE
+"Main (flagged = missing)","stunted","wealth","CCA","IPW",1,1,0,0,1,TRUE
+"Main (flagged = missing)","stunted","wealth","CCA","MI-PMM",1,1,0,0,1,TRUE
+"Main (flagged = missing)","stunted","wealth","CCA","MI-RF",1,1,0,0,1,TRUE
+"Main (flagged = missing)","stunted","wealth","CCA (outcome + covariates)","IPW",1,1,0,0,1,TRUE
+"Main (flagged = missing)","stunted","wealth","CCA (outcome + covariates)","MI-PMM",1,1,0,0,1,TRUE
+"Main (flagged = missing)","stunted","wealth","CCA (outcome + covariates)","MI-RF",1,1,0,0,1,TRUE
+"Main (flagged = missing)","stunted","wealth","IPW","MI-PMM",1,1,0,0,1,TRUE
+"Main (flagged = missing)","stunted","wealth","IPW","MI-RF",1,1,0,0,1,TRUE
+"Main (flagged = missing)","stunted","wealth","MI-PMM","MI-RF",1,1,0,0,1,TRUE
+"Main (flagged = missing)","wasted","region","CCA","CCA (outcome + covariates)",0.990118577075099,0.952569169960474,3,9,0.8,TRUE
+"Main (flagged = missing)","wasted","region","CCA","IPW",0.99802371541502,0.984189723320158,1,4,1,TRUE
+"Main (flagged = missing)","wasted","region","CCA","MI-PMM",0.99901185770751,0.992094861660079,1,2,1,TRUE
+"Main (flagged = missing)","wasted","region","CCA","MI-RF",1,1,0,0,1,TRUE
+"Main (flagged = missing)","wasted","region","CCA (outcome + covariates)","IPW",0.987154150197628,0.936758893280632,3,12,0.8,TRUE
+"Main (flagged = missing)","wasted","region","CCA (outcome + covariates)","MI-PMM",0.989130434782609,0.944664031620553,3,11,0.8,TRUE
+"Main (flagged = missing)","wasted","region","CCA (outcome + covariates)","MI-RF",0.990118577075099,0.952569169960474,3,9,0.8,TRUE
+"Main (flagged = missing)","wasted","region","IPW","MI-PMM",0.99703557312253,0.976284584980237,1,6,1,TRUE
+"Main (flagged = missing)","wasted","region","IPW","MI-RF",0.99802371541502,0.984189723320158,1,4,1,TRUE
+"Main (flagged = missing)","wasted","region","MI-PMM","MI-RF",0.99901185770751,0.992094861660079,1,2,1,TRUE
+"Main (flagged = missing)","wasted","wealth","CCA","CCA (outcome + covariates)",1,1,0,0,1,TRUE
+"Main (flagged = missing)","wasted","wealth","CCA","IPW",1,1,0,0,1,TRUE
+"Main (flagged = missing)","wasted","wealth","CCA","MI-PMM",1,1,0,0,1,TRUE
+"Main (flagged = missing)","wasted","wealth","CCA","MI-RF",1,1,0,0,1,TRUE
+"Main (flagged = missing)","wasted","wealth","CCA (outcome + covariates)","IPW",1,1,0,0,1,TRUE
+"Main (flagged = missing)","wasted","wealth","CCA (outcome + covariates)","MI-PMM",1,1,0,0,1,TRUE
+"Main (flagged = missing)","wasted","wealth","CCA (outcome + covariates)","MI-RF",1,1,0,0,1,TRUE
+"Main (flagged = missing)","wasted","wealth","IPW","MI-PMM",1,1,0,0,1,TRUE
+"Main (flagged = missing)","wasted","wealth","IPW","MI-RF",1,1,0,0,1,TRUE
+"Main (flagged = missing)","wasted","wealth","MI-PMM","MI-RF",1,1,0,0,1,TRUE
+"Sensitivity (flagged excluded)","stunted","region","CCA","CCA (outcome + covariates)",0.99802371541502,0.984189723320158,1,4,0.8,TRUE
+"Sensitivity (flagged excluded)","stunted","region","CCA","IPW",0.995059288537549,0.968379446640316,2,7,1,FALSE
+"Sensitivity (flagged excluded)","stunted","region","CCA","MI-PMM",1,1,0,0,1,TRUE
+"Sensitivity (flagged excluded)","stunted","region","CCA","MI-RF",0.99901185770751,0.992094861660079,1,2,1,TRUE
+"Sensitivity (flagged excluded)","stunted","region","CCA (outcome + covariates)","IPW",0.993083003952569,0.952569169960474,2,11,0.8,FALSE
+"Sensitivity (flagged excluded)","stunted","region","CCA (outcome + covariates)","MI-PMM",0.99802371541502,0.984189723320158,1,4,0.8,TRUE
+"Sensitivity (flagged excluded)","stunted","region","CCA (outcome + covariates)","MI-RF",0.99703557312253,0.976284584980237,1,6,0.8,TRUE
+"Sensitivity (flagged excluded)","stunted","region","IPW","MI-PMM",0.995059288537549,0.968379446640316,2,7,1,FALSE
+"Sensitivity (flagged excluded)","stunted","region","IPW","MI-RF",0.992094861660079,0.960474308300395,3,8,1,FALSE
+"Sensitivity (flagged excluded)","stunted","region","MI-PMM","MI-RF",0.99901185770751,0.992094861660079,1,2,1,TRUE
+"Sensitivity (flagged excluded)","stunted","wealth","CCA","CCA (outcome + covariates)",1,1,0,0,1,TRUE
+"Sensitivity (flagged excluded)","stunted","wealth","CCA","IPW",1,1,0,0,1,TRUE
+"Sensitivity (flagged excluded)","stunted","wealth","CCA","MI-PMM",1,1,0,0,1,TRUE
+"Sensitivity (flagged excluded)","stunted","wealth","CCA","MI-RF",1,1,0,0,1,TRUE
+"Sensitivity (flagged excluded)","stunted","wealth","CCA (outcome + covariates)","IPW",1,1,0,0,1,TRUE
+"Sensitivity (flagged excluded)","stunted","wealth","CCA (outcome + covariates)","MI-PMM",1,1,0,0,1,TRUE
+"Sensitivity (flagged excluded)","stunted","wealth","CCA (outcome + covariates)","MI-RF",1,1,0,0,1,TRUE
+"Sensitivity (flagged excluded)","stunted","wealth","IPW","MI-PMM",1,1,0,0,1,TRUE
+"Sensitivity (flagged excluded)","stunted","wealth","IPW","MI-RF",1,1,0,0,1,TRUE
+"Sensitivity (flagged excluded)","stunted","wealth","MI-PMM","MI-RF",1,1,0,0,1,TRUE
+"Sensitivity (flagged excluded)","wasted","region","CCA","CCA (outcome + covariates)",0.990118577075099,0.952569169960474,3,9,0.8,TRUE
+"Sensitivity (flagged excluded)","wasted","region","CCA","IPW",0.99802371541502,0.984189723320158,1,4,1,TRUE
+"Sensitivity (flagged excluded)","wasted","region","CCA","MI-PMM",0.99901185770751,0.992094861660079,1,2,1,TRUE
+"Sensitivity (flagged excluded)","wasted","region","CCA","MI-RF",0.99802371541502,0.984189723320158,1,4,1,TRUE
+"Sensitivity (flagged excluded)","wasted","region","CCA (outcome + covariates)","IPW",0.987154150197628,0.936758893280632,3,12,0.8,TRUE
+"Sensitivity (flagged excluded)","wasted","region","CCA (outcome + covariates)","MI-PMM",0.988142292490119,0.944664031620553,3,10,0.8,TRUE
+"Sensitivity (flagged excluded)","wasted","region","CCA (outcome + covariates)","MI-RF",0.990118577075099,0.952569169960474,3,9,0.8,TRUE
+"Sensitivity (flagged excluded)","wasted","region","IPW","MI-PMM",0.99901185770751,0.992094861660079,1,2,1,TRUE
+"Sensitivity (flagged excluded)","wasted","region","IPW","MI-RF",0.99802371541502,0.984189723320158,1,4,1,TRUE
+"Sensitivity (flagged excluded)","wasted","region","MI-PMM","MI-RF",0.99901185770751,0.992094861660079,1,2,1,TRUE
+"Sensitivity (flagged excluded)","wasted","wealth","CCA","CCA (outcome + covariates)",1,1,0,0,1,TRUE
+"Sensitivity (flagged excluded)","wasted","wealth","CCA","IPW",1,1,0,0,1,TRUE
+"Sensitivity (flagged excluded)","wasted","wealth","CCA","MI-PMM",1,1,0,0,1,TRUE
+"Sensitivity (flagged excluded)","wasted","wealth","CCA","MI-RF",1,1,0,0,1,TRUE
+"Sensitivity (flagged excluded)","wasted","wealth","CCA (outcome + covariates)","IPW",1,1,0,0,1,TRUE
+"Sensitivity (flagged excluded)","wasted","wealth","CCA (outcome + covariates)","MI-PMM",1,1,0,0,1,TRUE
+"Sensitivity (flagged excluded)","wasted","wealth","CCA (outcome + covariates)","MI-RF",1,1,0,0,1,TRUE
+"Sensitivity (flagged excluded)","wasted","wealth","IPW","MI-PMM",1,1,0,0,1,TRUE
+"Sensitivity (flagged excluded)","wasted","wealth","IPW","MI-RF",1,1,0,0,1,TRUE
+"Sensitivity (flagged excluded)","wasted","wealth","MI-PMM","MI-RF",1,1,0,0,1,TRUE

@@ -1,0 +1,13 @@
+"variable","n","n_missing","pct_missing"
+"region",6682,0,0
+"residence",6682,0,0
+"wealth",6682,0,0
+"sex",6682,0,0
+"age_m",6682,0,0
+"mother_status",6682,0,0
+"mother_edu",6682,6,0.1
+"mother_age",6682,223,3.3
+"hh_size",6682,0,0
+"haz",6682,280,4.2
+"waz",6682,260,3.9
+"whz",6682,204,3.1

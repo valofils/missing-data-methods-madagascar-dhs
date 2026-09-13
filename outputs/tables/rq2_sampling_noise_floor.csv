@@ -1,0 +1,41 @@
+"analysis","outcome","axis","method","noise_spearman_median","noise_topk_overlap_median"
+"Main (flagged = missing)","stunted","region","CCA",0.925889328063241,0.6
+"Main (flagged = missing)","stunted","region","CCA (outcome + covariates)",0.925889328063241,0.6
+"Main (flagged = missing)","stunted","region","IPW",0.925889328063241,0.6
+"Main (flagged = missing)","stunted","region","MI-PMM",0.926877470355731,0.6
+"Main (flagged = missing)","stunted","region","MI-RF",0.926877470355731,0.6
+"Main (flagged = missing)","stunted","wealth","CCA",0.9,1
+"Main (flagged = missing)","stunted","wealth","CCA (outcome + covariates)",0.9,1
+"Main (flagged = missing)","stunted","wealth","IPW",0.9,1
+"Main (flagged = missing)","stunted","wealth","MI-PMM",0.9,1
+"Main (flagged = missing)","stunted","wealth","MI-RF",0.9,1
+"Main (flagged = missing)","wasted","region","CCA",0.878458498023715,0.8
+"Main (flagged = missing)","wasted","region","CCA (outcome + covariates)",0.875494071146245,0.8
+"Main (flagged = missing)","wasted","region","IPW",0.878458498023715,0.8
+"Main (flagged = missing)","wasted","region","MI-PMM",0.879446640316205,0.8
+"Main (flagged = missing)","wasted","region","MI-RF",0.878458498023715,0.8
+"Main (flagged = missing)","wasted","wealth","CCA",0.9,1
+"Main (flagged = missing)","wasted","wealth","CCA (outcome + covariates)",0.9,1
+"Main (flagged = missing)","wasted","wealth","IPW",0.9,1
+"Main (flagged = missing)","wasted","wealth","MI-PMM",0.9,1
+"Main (flagged = missing)","wasted","wealth","MI-RF",0.9,1
+"Sensitivity (flagged excluded)","stunted","region","CCA",0.925889328063241,0.6
+"Sensitivity (flagged excluded)","stunted","region","CCA (outcome + covariates)",0.926877470355731,0.6
+"Sensitivity (flagged excluded)","stunted","region","IPW",0.926877470355731,0.6
+"Sensitivity (flagged excluded)","stunted","region","MI-PMM",0.925889328063241,0.6
+"Sensitivity (flagged excluded)","stunted","region","MI-RF",0.925889328063241,0.6
+"Sensitivity (flagged excluded)","stunted","wealth","CCA",0.9,1
+"Sensitivity (flagged excluded)","stunted","wealth","CCA (outcome + covariates)",0.9,1
+"Sensitivity (flagged excluded)","stunted","wealth","IPW",0.9,1
+"Sensitivity (flagged excluded)","stunted","wealth","MI-PMM",0.9,1
+"Sensitivity (flagged excluded)","stunted","wealth","MI-RF",0.9,1
+"Sensitivity (flagged excluded)","wasted","region","CCA",0.877470355731225,0.8
+"Sensitivity (flagged excluded)","wasted","region","CCA (outcome + covariates)",0.876482213438735,0.8
+"Sensitivity (flagged excluded)","wasted","region","IPW",0.877470355731225,0.8
+"Sensitivity (flagged excluded)","wasted","region","MI-PMM",0.878458498023715,0.8
+"Sensitivity (flagged excluded)","wasted","region","MI-RF",0.878458498023715,0.8
+"Sensitivity (flagged excluded)","wasted","wealth","CCA",0.9,1
+"Sensitivity (flagged excluded)","wasted","wealth","CCA (outcome + covariates)",0.9,1
+"Sensitivity (flagged excluded)","wasted","wealth","IPW",0.9,1
+"Sensitivity (flagged excluded)","wasted","wealth","MI-PMM",0.9,1
+"Sensitivity (flagged excluded)","wasted","wealth","MI-RF",0.9,1

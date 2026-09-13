@@ -1,0 +1,7 @@
+2026-09-13 15:08:57
+VALIDATION GATE: PASS
+G1 Table 11.1 point estimates: 246/246 cells within rounding (max |diff| = 0.0 pp)
+G2 denominators: 3/3 match
+G3 ranges/weights: 5/5 pass
+G4 sampling errors: 53/53 match (prop 53, SE/CI 53)
+KR cross-check (info only): stunting 39.3%, n = 5778

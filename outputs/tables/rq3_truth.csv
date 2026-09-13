@@ -1,0 +1,59 @@
+"outcome","axis","group","truth"
+"stunted","National","National",0.396388083090866
+"stunted","region","Antananarivo",0.432777138679483
+"stunted","region","Analamanga (excl. Antananarivo)",0.478144552196113
+"stunted","region","Vakinankaratra",0.521445402316846
+"stunted","region","Itasy",0.513248036833738
+"stunted","region","Bongolava",0.377475785860181
+"stunted","region","Haute Matsiatra",0.493660279797983
+"stunted","region","Amoron'i Mania",0.494042241828504
+"stunted","region","Vatovavy Fitovinany",0.459428787152232
+"stunted","region","Ihorombe",0.325285305995659
+"stunted","region","Atsimo Atsinanana",0.485982617915312
+"stunted","region","Atsinanana",0.366703471615038
+"stunted","region","Analanjirofo",0.363028663016698
+"stunted","region","Alaotra Mangoro",0.450153619396441
+"stunted","region","Boeny",0.284008399688661
+"stunted","region","Sofia",0.267239132292558
+"stunted","region","Betsiboka",0.298513544858299
+"stunted","region","Melaky",0.218932837940541
+"stunted","region","Atsimo Andrefana",0.265229138090725
+"stunted","region","Androy",0.454650512805082
+"stunted","region","Anosy",0.467303157037194
+"stunted","region","Menabe",0.343010633534967
+"stunted","region","Diana",0.207097775480624
+"stunted","region","Sava",0.311597011010489
+"stunted","wealth","Poorest",0.428828599006676
+"stunted","wealth","Poorer",0.432669837472186
+"stunted","wealth","Middle",0.39486217196878
+"stunted","wealth","Richer",0.395521301720665
+"stunted","wealth","Richest",0.294272526996252
+"wasted","National","National",0.0762326625345566
+"wasted","region","Antananarivo",0.0382128410027269
+"wasted","region","Analamanga (excl. Antananarivo)",0.046818378813558
+"wasted","region","Vakinankaratra",0.0421791554865443
+"wasted","region","Itasy",0.0397739967365034
+"wasted","region","Bongolava",0.0733787800154539
+"wasted","region","Haute Matsiatra",0.0252768464324679
+"wasted","region","Amoron'i Mania",0.0267845329994709
+"wasted","region","Vatovavy Fitovinany",0.0981746002573223
+"wasted","region","Ihorombe",0.0526003071284108
+"wasted","region","Atsimo Atsinanana",0.123475908409121
+"wasted","region","Atsinanana",0.0850474354127288
+"wasted","region","Analanjirofo",0.111791504638165
+"wasted","region","Alaotra Mangoro",0.0380941996328205
+"wasted","region","Boeny",0.126739379901896
+"wasted","region","Sofia",0.100113395275943
+"wasted","region","Betsiboka",0.0690452293768839
+"wasted","region","Melaky",0.0613848301906316
+"wasted","region","Atsimo Andrefana",0.0683526846655477
+"wasted","region","Androy",0.152781487874497
+"wasted","region","Anosy",0.0987741160114862
+"wasted","region","Menabe",0.0678433175489092
+"wasted","region","Diana",0.0799916117470136
+"wasted","region","Sava",0.0918909986860037
+"wasted","wealth","Poorest",0.100236690935474
+"wasted","wealth","Poorer",0.0800813315831572
+"wasted","wealth","Middle",0.0666750463320827
+"wasted","wealth","Richer",0.0539584408061748
+"wasted","wealth","Richest",0.0693875746189683

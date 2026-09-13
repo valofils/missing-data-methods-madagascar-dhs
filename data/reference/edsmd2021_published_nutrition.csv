@@ -1,0 +1,42 @@
+axis,group,sev_stunted,stunted,sev_wasted,wasted,sev_underweight,underweight
+National,National,12.7,39.8,1.5,7.7,5.6,23.4
+Age,<6,7.5,25.3,1.9,6.4,4.0,13.7
+Age,6-8,9.5,27.5,1.5,7.7,4.7,19.4
+Age,9-11,8.7,30.3,1.7,9.9,4.4,20.5
+Age,12-17,10.1,38.2,1.0,9.4,5.3,21.2
+Age,18-23,18.0,52.3,2.1,9.4,8.5,28.2
+Age,24-35,15.7,43.4,1.9,8.7,6.1,26.6
+Age,36-47,13.9,45.7,1.3,6.0,5.4,25.0
+Age,48-59,12.2,39.2,1.0,6.9,5.5,25.0
+Sex,Male,14.9,43.6,2.1,8.7,6.2,25.4
+Sex,Female,10.5,36.1,0.9,6.6,4.9,21.5
+Residence,Urban,9.6,35.5,0.9,7.9,4.8,22.3
+Residence,Rural,13.3,40.6,1.6,7.6,5.7,23.6
+Region,Antananarivo,13.2,44.0,0.6,3.7,3.7,21.6
+Region,Analamanga (excl. Antananarivo),14.1,48.3,0.9,5.1,6.1,24.6
+Region,Vakinankaratra,17.3,51.9,1.5,4.1,5.5,28.0
+Region,Itasy,15.2,51.6,0.0,3.9,5.0,26.7
+Region,Bongolava,14.5,37.6,1.8,7.4,5.9,25.7
+Region,Haute Matsiatra,21.0,49.2,0.0,2.4,8.1,26.9
+Region,Amoron'i Mania,18.9,49.1,0.4,2.6,3.3,22.6
+Region,Vatovavy Fitovinany,13.6,45.7,3.0,10.2,6.8,25.2
+Region,Ihorombe,8.9,32.6,1.6,5.2,4.2,17.3
+Region,Atsimo Atsinanana,17.5,48.5,3.1,12.4,9.3,33.8
+Region,Atsinanana,11.2,37.6,1.9,8.6,8.1,26.2
+Region,Analanjirofo,9.7,36.2,2.2,11.3,6.3,24.3
+Region,Alaotra Mangoro,16.6,44.9,0.9,3.7,3.4,24.7
+Region,Boeny,6.1,28.8,1.5,12.4,2.9,21.1
+Region,Sofia,7.8,28.1,1.5,9.8,3.5,14.9
+Region,Betsiboka,8.0,29.6,2.0,7.3,2.0,19.4
+Region,Melaky,8.3,22.3,1.6,5.9,4.6,13.3
+Region,Atsimo Andrefana,6.4,26.7,1.0,6.8,3.4,14.9
+Region,Androy,18.5,45.3,2.9,15.2,10.1,35.1
+Region,Anosy,21.2,46.8,1.8,9.9,8.6,29.3
+Region,Menabe,10.6,34.9,0.3,6.7,7.5,19.1
+Region,Diana,4.9,21.7,0.6,7.8,1.8,10.6
+Region,Sava,3.8,31.0,2.3,9.5,1.7,18.9
+Wealth,Poorest,17.7,42.8,2.2,9.9,8.9,29.5
+Wealth,Poorer,14.1,43.4,1.3,8.0,5.4,25.1
+Wealth,Middle,13.1,40.1,1.2,6.9,5.0,21.8
+Wealth,Richer,7.7,39.4,0.9,5.5,3.3,18.7
+Wealth,Richest,7.4,30.0,1.4,7.1,3.6,18.6

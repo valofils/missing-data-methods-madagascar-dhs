@@ -212,7 +212,7 @@ M ± 2SE). Published values are transcribed in `data/reference/`.
 - **Imputation model:** HAZ + WHZ (WAZ excluded — near-deterministic with HAZ/WHZ, caused
   non-mixing PMM chains), m = 20, maxit = 20, predictors include region, residence, wealth,
   sex, age, household size, mother status/education/age, log design weight. Rubin's rules on
-  the logit scale with Barnard–Rubin df (complete-data df = design df 605).
+  the logit scale with Barnard–Rubin df (complete-data df = design df 604: 649 PSUs − 45 strata).
 - **IPW:** survey-weighted logistic response model per z-score; weights treated as fixed.
 - **Runtime:** parallel mice (4 workers); RQ1 script ≈ 46 min, MI-RF dominates.
 

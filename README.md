@@ -33,6 +33,7 @@ registered users from [The DHS Program](https://dhsprogram.com/data/). To reprod
 | `R/10_observed_methods.R` | RQ1 — prevalence by method (main + flagged-excluded sensitivity) |
 | `R/30_equity_ranking.R` | RQ2 — subgroup rankings, cross-method concordance, rank uncertainty |
 | `R/fn_simulation.R`, `R/20_simulation.R` | RQ3 — simulation (protocol: `docs/simulation_protocol.md`; resumable) |
+| `R/run_simulation_awake.ps1` | Windows wrapper that keeps the machine from idle-sleeping while the simulation runs |
 | `R/21_simulation_summary.R` | RQ3 — performance measures with Monte Carlo SEs |
 | `R/40_tables.R` | Tables 1–3 and S2–S5 (.docx, .html, .csv) |
 | `R/41_figures.R` | Figures 1, 2 and S1, S2 |

@@ -5,9 +5,12 @@
 % strings to map numeric citations to keys, and stops if any reference cannot be matched, so the
 % two representations cannot drift apart silently.
 %
-% STATUS: transcribed from the drafted reference strings, which were themselves written from
-% memory. Every entry still requires verification against PubMed or the publisher record before
-% submission (authors, title, year, volume, issue, pages).
+% STATUS: all 37 entries verified on 16 September 2026 against Crossref (DOI metadata), PubMed
+% (esearch/esummary) or the publisher's own record for the reports and books, by
+% R/52_check_references.R plus targeted lookups; see outputs/tables/reference_check.csv.
+% Verified DOIs are recorded below; PMIDs are given where a DOI was not confirmed, and URLs for
+% the grey literature. Journal titles use NLM abbreviations. Page ranges follow Vancouver
+% elision (e.g. 427--51 for 427-451).
 
 @article{black2013maternal,
   author = {Black, Robert E and Victora, Cesar G and Walker, Susan P and Bhutta, Zulfiqar A and Christian, Parul and de Onis, Mercedes and others},
@@ -17,7 +20,8 @@
   volume = {382},
   number = {9890},
   pages = {427--51},
-  origtext = {Black RE, Victora CG, Walker SP, Bhutta ZA, Christian P, de Onis M, et al. Maternal and child undernutrition and overweight in low-income and middle-income countries. Lancet. 2013;382(9890):427-51.}
+  origtext = {Black RE, Victora CG, Walker SP, Bhutta ZA, Christian P, de Onis M, et al. Maternal and child undernutrition and overweight in low-income and middle-income countries. Lancet. 2013;382(9890):427-51.},
+  doi = {10.1016/S0140-6736(13)60937-X},
 }
 
 @article{deonis2016childhood,
@@ -28,7 +32,8 @@
   volume = {12},
   number = {Suppl 1},
   pages = {12--26},
-  origtext = {de Onis M, Branca F. Childhood stunting: a global perspective. Matern Child Nutr. 2016;12(Suppl 1):12-26.}
+  origtext = {de Onis M, Branca F. Childhood stunting: a global perspective. Matern Child Nutr. 2016;12(Suppl 1):12-26.},
+  doi = {10.1111/mcn.12231},
 }
 
 @techreport{unicef2023levels,
@@ -37,7 +42,8 @@
   institution = {World Health Organization},
   address = {Geneva},
   year = {2023},
-  origtext = {UNICEF, World Health Organization, World Bank Group. Levels and trends in child malnutrition: UNICEF/WHO/World Bank Group joint child malnutrition estimates, key findings of the 2023 edition. Geneva: World Health Organization; 2023.}
+  origtext = {UNICEF, World Health Organization, World Bank Group. Levels and trends in child malnutrition: UNICEF/WHO/World Bank Group joint child malnutrition estimates, key findings of the 2023 edition. Geneva: World Health Organization; 2023.},
+  url = {https://data.unicef.org/resources/jme-report-2023/},
 }
 
 @article{victora2021revisiting,
@@ -48,7 +54,8 @@
   volume = {397},
   number = {10282},
   pages = {1388--99},
-  origtext = {Victora CG, Christian P, Vidaletti LP, Gatica-Dominguez G, Menon P, Black RE. Revisiting maternal and child undernutrition in low-income and middle-income countries: variable progress towards an unfinished agenda. Lancet. 2021;397(10282):1388-99.}
+  origtext = {Victora CG, Christian P, Vidaletti LP, Gatica-Dominguez G, Menon P, Black RE. Revisiting maternal and child undernutrition in low-income and middle-income countries: variable progress towards an unfinished agenda. Lancet. 2021;397(10282):1388-99.},
+  doi = {10.1016/S0140-6736(21)00394-9},
 }
 
 @techreport{who2014global,
@@ -57,7 +64,8 @@
   institution = {World Health Organization},
   address = {Geneva},
   year = {2014},
-  origtext = {World Health Organization. Global nutrition targets 2025: stunting policy brief. Geneva: World Health Organization; 2014.}
+  origtext = {World Health Organization. Global nutrition targets 2025: stunting policy brief. Geneva: World Health Organization; 2014.},
+  url = {https://www.who.int/publications/i/item/WHO-NMH-NHD-14.3},
 }
 
 @techreport{instat2022edsmd,
@@ -66,7 +74,7 @@
   institution = {INSTAT and ICF},
   address = {Antananarivo, Madagascar and Rockville, Maryland, USA},
   year = {2022},
-  origtext = {Institut National de la Statistique (INSTAT), ICF. Enquete Demographique et de Sante a Madagascar, 2021. Antananarivo, Madagascar and Rockville, Maryland, USA: INSTAT and ICF; 2022.}
+  origtext = {Institut National de la Statistique (INSTAT), ICF. Enquete Demographique et de Sante a Madagascar, 2021. Antananarivo, Madagascar and Rockville, Maryland, USA: INSTAT and ICF; 2022.},
 }
 
 @article{corsi2012demographic,
@@ -77,7 +85,8 @@
   volume = {41},
   number = {6},
   pages = {1602--13},
-  origtext = {Corsi DJ, Neuman M, Finlay JE, Subramanian SV. Demographic and health surveys: a profile. Int J Epidemiol. 2012;41(6):1602-13.}
+  origtext = {Corsi DJ, Neuman M, Finlay JE, Subramanian SV. Demographic and health surveys: a profile. Int J Epidemiol. 2012;41(6):1602-13.},
+  doi = {10.1093/ije/dys184},
 }
 
 @techreport{assaf2015assessment,
@@ -87,7 +96,8 @@
   institution = {ICF International},
   address = {Rockville, Maryland, USA},
   year = {2015},
-  origtext = {Assaf S, Kothari MT, Pullum T. An assessment of the quality of DHS anthropometric data, 2005-2014. DHS Methodological Reports No. 16. Rockville, Maryland, USA: ICF International; 2015.}
+  origtext = {Assaf S, Kothari MT, Pullum T. An assessment of the quality of DHS anthropometric data, 2005-2014. DHS Methodological Reports No. 16. Rockville, Maryland, USA: ICF International; 2015.},
+  url = {https://www.dhsprogram.com/pubs/pdf/MR16/MR16.pdf},
 }
 
 @article{perumal2020anthropometric,
@@ -98,7 +108,8 @@
   volume = {112},
   number = {Suppl 2},
   pages = {806S--815S},
-  origtext = {Perumal N, Namaste S, Qamar H, Aimone A, Bassani DG, Roth DE. Anthropometric data quality assessment in multisurvey studies of child growth. Am J Clin Nutr. 2020;112(Suppl 2):806S-815S.}
+  origtext = {Perumal N, Namaste S, Qamar H, Aimone A, Bassani DG, Roth DE. Anthropometric data quality assessment in multisurvey studies of child growth. Am J Clin Nutr. 2020;112(Suppl 2):806S-815S.},
+  doi = {10.1093/ajcn/nqaa162},
 }
 
 @article{crowe2014effect,
@@ -108,7 +119,8 @@
   year = {2014},
   volume = {2},
   pages = {e380},
-  origtext = {Crowe S, Seal A, Grijalva-Eternod C, Kerac M. Effect of nutrition survey 'cleaning criteria' on estimates of malnutrition prevalence and disease burden: secondary data analysis. PeerJ. 2014;2:e380.}
+  origtext = {Crowe S, Seal A, Grijalva-Eternod C, Kerac M. Effect of nutrition survey 'cleaning criteria' on estimates of malnutrition prevalence and disease burden: secondary data analysis. PeerJ. 2014;2:e380.},
+  doi = {10.7717/peerj.380},
 }
 
 @book{little2019statistical,
@@ -118,7 +130,8 @@
   publisher = {Wiley},
   address = {Hoboken, NJ},
   year = {2019},
-  origtext = {Little RJA, Rubin DB. Statistical analysis with missing data. 3rd ed. Hoboken, NJ: Wiley; 2019.}
+  origtext = {Little RJA, Rubin DB. Statistical analysis with missing data. 3rd ed. Hoboken, NJ: Wiley; 2019.},
+  doi = {10.1002/9781119482260},
 }
 
 @article{seaman2013review,
@@ -129,7 +142,8 @@
   volume = {22},
   number = {3},
   pages = {278--95},
-  origtext = {Seaman SR, White IR. Review of inverse probability weighting for dealing with missing data. Stat Methods Med Res. 2013;22(3):278-95.}
+  origtext = {Seaman SR, White IR. Review of inverse probability weighting for dealing with missing data. Stat Methods Med Res. 2013;22(3):278-95.},
+  doi = {10.1177/0962280210395740},
 }
 
 @article{vanbuuren2011mice,
@@ -140,7 +154,8 @@
   volume = {45},
   number = {3},
   pages = {1--67},
-  origtext = {van Buuren S, Groothuis-Oudshoorn K. mice: Multivariate Imputation by Chained Equations in R. J Stat Softw. 2011;45(3):1-67.}
+  origtext = {van Buuren S, Groothuis-Oudshoorn K. mice: Multivariate Imputation by Chained Equations in R. J Stat Softw. 2011;45(3):1-67.},
+  doi = {10.18637/jss.v045.i03},
 }
 
 @article{doove2014recursive,
@@ -150,7 +165,8 @@
   year = {2014},
   volume = {72},
   pages = {92--104},
-  origtext = {Doove LL, Van Buuren S, Dusseldorp E. Recursive partitioning for missing data imputation in the presence of interaction effects. Comput Stat Data Anal. 2014;72:92-104.}
+  origtext = {Doove LL, Van Buuren S, Dusseldorp E. Recursive partitioning for missing data imputation in the presence of interaction effects. Comput Stat Data Anal. 2014;72:92-104.},
+  doi = {10.1016/j.csda.2013.10.025},
 }
 
 @article{shah2014comparison,
@@ -161,7 +177,8 @@
   volume = {179},
   number = {6},
   pages = {764--74},
-  origtext = {Shah AD, Bartlett JW, Carpenter J, Nicholas O, Hemingway H. Comparison of random forest and parametric imputation models for imputing missing data using MICE: a CALIBER study. Am J Epidemiol. 2014;179(6):764-74.}
+  origtext = {Shah AD, Bartlett JW, Carpenter J, Nicholas O, Hemingway H. Comparison of random forest and parametric imputation models for imputing missing data using MICE: a CALIBER study. Am J Epidemiol. 2014;179(6):764-74.},
+  doi = {10.1093/aje/kwt312},
 }
 
 @article{lee2021framework,
@@ -171,7 +188,8 @@
   year = {2021},
   volume = {134},
   pages = {79--88},
-  origtext = {Lee KJ, Tilling KM, Cornish RP, Little RJA, Bell ML, Goetghebeur E, et al. Framework for the treatment and reporting of missing data in observational studies: the Treatment And Reporting of Missing data in Observational Studies framework. J Clin Epidemiol. 2021;134:79-88.}
+  origtext = {Lee KJ, Tilling KM, Cornish RP, Little RJA, Bell ML, Goetghebeur E, et al. Framework for the treatment and reporting of missing data in observational studies: the Treatment And Reporting of Missing data in Observational Studies framework. J Clin Epidemiol. 2021;134:79-88.},
+  doi = {10.1016/j.jclinepi.2021.01.008},
 }
 
 @article{barnighausen2011correcting,
@@ -182,7 +200,8 @@
   volume = {22},
   number = {1},
   pages = {27--35},
-  origtext = {Barnighausen T, Bor J, Wandira-Kazibwe S, Canning D. Correcting HIV prevalence estimates for survey nonparticipation using Heckman-type selection models. Epidemiology. 2011;22(1):27-35.}
+  origtext = {Barnighausen T, Bor J, Wandira-Kazibwe S, Canning D. Correcting HIV prevalence estimates for survey nonparticipation using Heckman-type selection models. Epidemiology. 2011;22(1):27-35.},
+  pmid = {21150352},
 }
 
 @article{goldstein1996league,
@@ -193,7 +212,8 @@
   volume = {159},
   number = {3},
   pages = {385--443},
-  origtext = {Goldstein H, Spiegelhalter DJ. League tables and their limitations: statistical issues in comparisons of institutional performance. J R Stat Soc Ser A Stat Soc. 1996;159(3):385-443.}
+  origtext = {Goldstein H, Spiegelhalter DJ. League tables and their limitations: statistical issues in comparisons of institutional performance. J R Stat Soc Ser A Stat Soc. 1996;159(3):385-443.},
+  doi = {10.2307/2983325},
 }
 
 @article{marshall1998reliability,
@@ -204,7 +224,8 @@
   volume = {316},
   number = {7146},
   pages = {1701--5},
-  origtext = {Marshall EC, Spiegelhalter DJ. Reliability of league tables of in vitro fertilisation clinics: retrospective analysis of live birth rates. BMJ. 1998;316(7146):1701-5.}
+  origtext = {Marshall EC, Spiegelhalter DJ. Reliability of league tables of in vitro fertilisation clinics: retrospective analysis of live birth rates. BMJ. 1998;316(7146):1701-5.},
+  doi = {10.1136/bmj.316.7146.1701},
 }
 
 @techreport{croft2023guide,
@@ -213,7 +234,8 @@
   institution = {ICF},
   address = {Rockville, Maryland, USA},
   year = {2023},
-  origtext = {Croft TN, Allen CK, Zachary BW, et al. Guide to DHS Statistics: DHS-8. Rockville, Maryland, USA: ICF; 2023.}
+  origtext = {Croft TN, Allen CK, Zachary BW, et al. Guide to DHS Statistics: DHS-8. Rockville, Maryland, USA: ICF; 2023.},
+  url = {https://www.dhsprogram.com/pubs/pdf/DHSG1/Guide_to_DHS_Statistics_DHS-8.pdf},
 }
 
 @article{who2006child,
@@ -223,7 +245,8 @@
   year = {2006},
   volume = {450},
   pages = {76--85},
-  origtext = {WHO Multicentre Growth Reference Study Group. WHO Child Growth Standards based on length/height, weight and age. Acta Paediatr Suppl. 2006;450:76-85.}
+  origtext = {WHO Multicentre Growth Reference Study Group. WHO Child Growth Standards based on length/height, weight and age. Acta Paediatr Suppl. 2006;450:76-85.},
+  pmid = {16817681},
 }
 
 @article{lumley2004analysis,
@@ -234,7 +257,8 @@
   volume = {9},
   number = {8},
   pages = {1--19},
-  origtext = {Lumley T. Analysis of complex survey samples. J Stat Softw. 2004;9(8):1-19.}
+  origtext = {Lumley T. Analysis of complex survey samples. J Stat Softw. 2004;9(8):1-19.},
+  doi = {10.18637/jss.v009.i08},
 }
 
 @article{rao1984chisquared,
@@ -245,7 +269,8 @@
   volume = {12},
   number = {1},
   pages = {46--60},
-  origtext = {Rao JNK, Scott AJ. On chi-squared tests for multiway contingency tables with cell proportions estimated from survey data. Ann Stat. 1984;12(1):46-60.}
+  origtext = {Rao JNK, Scott AJ. On chi-squared tests for multiway contingency tables with cell proportions estimated from survey data. Ann Stat. 1984;12(1):46-60.},
+  doi = {10.1214/aos/1176346391},
 }
 
 @article{white2011multiple,
@@ -256,7 +281,8 @@
   volume = {30},
   number = {4},
   pages = {377--99},
-  origtext = {White IR, Royston P, Wood AM. Multiple imputation using chained equations: issues and guidance for practice. Stat Med. 2011;30(4):377-99.}
+  origtext = {White IR, Royston P, Wood AM. Multiple imputation using chained equations: issues and guidance for practice. Stat Med. 2011;30(4):377-99.},
+  doi = {10.1002/sim.4067},
 }
 
 @article{morris2014tuning,
@@ -266,7 +292,8 @@
   year = {2014},
   volume = {14},
   pages = {75},
-  origtext = {Morris TP, White IR, Royston P. Tuning multiple imputation by predictive mean matching and local residual draws. BMC Med Res Methodol. 2014;14:75.}
+  origtext = {Morris TP, White IR, Royston P. Tuning multiple imputation by predictive mean matching and local residual draws. BMC Med Res Methodol. 2014;14:75.},
+  doi = {10.1186/1471-2288-14-75},
 }
 
 @article{reiter2006importance,
@@ -277,7 +304,8 @@
   volume = {32},
   number = {2},
   pages = {143--9},
-  origtext = {Reiter JP, Raghunathan TE, Kinney SK. The importance of modeling the sampling design in multiple imputation for missing data. Surv Methodol. 2006;32(2):143-9.}
+  origtext = {Reiter JP, Raghunathan TE, Kinney SK. The importance of modeling the sampling design in multiple imputation for missing data. Surv Methodol. 2006;32(2):143-9.},
+  url = {https://www150.statcan.gc.ca/n1/pub/12-001-x/2006002/article/9548-eng.pdf},
 }
 
 @article{wright2017ranger,
@@ -288,7 +316,8 @@
   volume = {77},
   number = {1},
   pages = {1--17},
-  origtext = {Wright MN, Ziegler A. ranger: a fast implementation of random forests for high dimensional data in C++ and R. J Stat Softw. 2017;77(1):1-17.}
+  origtext = {Wright MN, Ziegler A. ranger: a fast implementation of random forests for high dimensional data in C++ and R. J Stat Softw. 2017;77(1):1-17.},
+  doi = {10.18637/jss.v077.i01},
 }
 
 @book{rubin1987multiple,
@@ -297,7 +326,8 @@
   publisher = {Wiley},
   address = {New York},
   year = {1987},
-  origtext = {Rubin DB. Multiple imputation for nonresponse in surveys. New York: Wiley; 1987.}
+  origtext = {Rubin DB. Multiple imputation for nonresponse in surveys. New York: Wiley; 1987.},
+  doi = {10.1002/9780470316696},
 }
 
 @article{marshall2009combining,
@@ -307,7 +337,8 @@
   year = {2009},
   volume = {9},
   pages = {57},
-  origtext = {Marshall A, Altman DG, Holder RL, Royston P. Combining estimates of interest in prognostic modelling studies after multiple imputation: current practice and guidelines. BMC Med Res Methodol. 2009;9:57.}
+  origtext = {Marshall A, Altman DG, Holder RL, Royston P. Combining estimates of interest in prognostic modelling studies after multiple imputation: current practice and guidelines. BMC Med Res Methodol. 2009;9:57.},
+  doi = {10.1186/1471-2288-9-57},
 }
 
 @article{barnard1999small,
@@ -318,7 +349,8 @@
   volume = {86},
   number = {4},
   pages = {948--55},
-  origtext = {Barnard J, Rubin DB. Small-sample degrees of freedom with multiple imputation. Biometrika. 1999;86(4):948-55.}
+  origtext = {Barnard J, Rubin DB. Small-sample degrees of freedom with multiple imputation. Biometrika. 1999;86(4):948-55.},
+  doi = {10.1093/biomet/86.4.948},
 }
 
 @article{morris2019using,
@@ -329,7 +361,8 @@
   volume = {38},
   number = {11},
   pages = {2074--102},
-  origtext = {Morris TP, White IR, Crowther MJ. Using simulation studies to evaluate statistical methods. Stat Med. 2019;38(11):2074-102.}
+  origtext = {Morris TP, White IR, Crowther MJ. Using simulation studies to evaluate statistical methods. Stat Med. 2019;38(11):2074-102.},
+  doi = {10.1002/sim.8086},
 }
 
 @article{rao1988resampling,
@@ -340,7 +373,8 @@
   volume = {83},
   number = {401},
   pages = {231--41},
-  origtext = {Rao JNK, Wu CFJ. Resampling inference with complex survey data. J Am Stat Assoc. 1988;83(401):231-41.}
+  origtext = {Rao JNK, Wu CFJ. Resampling inference with complex survey data. J Am Stat Assoc. 1988;83(401):231-41.},
+  doi = {10.1080/01621459.1988.10478591},
 }
 
 @book{rcore2025r,
@@ -349,7 +383,8 @@
   publisher = {R Foundation for Statistical Computing},
   address = {Vienna, Austria},
   year = {2025},
-  origtext = {R Core Team. R: a language and environment for statistical computing. Vienna, Austria: R Foundation for Statistical Computing; 2025.}
+  origtext = {R Core Team. R: a language and environment for statistical computing. Vienna, Austria: R Foundation for Statistical Computing; 2025.},
+  url = {https://www.R-project.org/},
 }
 
 @article{hughes2019accounting,
@@ -360,7 +395,8 @@
   volume = {48},
   number = {4},
   pages = {1294--304},
-  origtext = {Hughes RA, Heron J, Sterne JAC, Tilling K. Accounting for missing data in statistical analyses: multiple imputation is not always the answer. Int J Epidemiol. 2019;48(4):1294-304.}
+  origtext = {Hughes RA, Heron J, Sterne JAC, Tilling K. Accounting for missing data in statistical analyses: multiple imputation is not always the answer. Int J Epidemiol. 2019;48(4):1294-304.},
+  doi = {10.1093/ije/dyz032},
 }
 
 @article{jakobsen2017when,
@@ -370,7 +406,8 @@
   year = {2017},
   volume = {17},
   pages = {162},
-  origtext = {Jakobsen JC, Gluud C, Wetterslev J, Winkel P. When and how should multiple imputation be used for handling missing data in randomised clinical trials - a practical guide with flowcharts. BMC Med Res Methodol. 2017;17:162.}
+  origtext = {Jakobsen JC, Gluud C, Wetterslev J, Winkel P. When and how should multiple imputation be used for handling missing data in randomised clinical trials - a practical guide with flowcharts. BMC Med Res Methodol. 2017;17:162.},
+  doi = {10.1186/s12874-017-0442-1},
 }
 
 @article{mercer2015space,
@@ -381,7 +418,8 @@
   volume = {9},
   number = {4},
   pages = {1889--905},
-  origtext = {Mercer LD, Wakefield J, Pantazis A, Lutambi AM, Masanja H, Clark S. Space-time smoothing of complex survey data: small area estimation for child mortality. Ann Appl Stat. 2015;9(4):1889-905.}
+  origtext = {Mercer LD, Wakefield J, Pantazis A, Lutambi AM, Masanja H, Clark S. Space-time smoothing of complex survey data: small area estimation for child mortality. Ann Appl Stat. 2015;9(4):1889-905.},
+  doi = {10.1214/15-AOAS872},
 }
 
 @article{leacy2017analyses,
@@ -392,5 +430,7 @@
   volume = {185},
   number = {4},
   pages = {304--15},
-  origtext = {Leacy FP, Floyd S, Yates TA, White IR. Analyses of sensitivity to the missing-at-random assumption using multiple imputation with delta adjustment: application to a tuberculosis/HIV prevalence survey with incomplete HIV-status data. Am J Epidemiol. 2017;185(4):304-15.}
+  origtext = {Leacy FP, Floyd S, Yates TA, White IR. Analyses of sensitivity to the missing-at-random assumption using multiple imputation with delta adjustment: application to a tuberculosis/HIV prevalence survey with incomplete HIV-status data. Am J Epidemiol. 2017;185(4):304-15.},
+  doi = {10.1093/aje/kww107},
+  pmid = {28073767},
 }

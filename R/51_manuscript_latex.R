@@ -56,7 +56,7 @@ stopifnot(file.exists(bib_file))
 bib <- readLines(bib_file, warn = FALSE, encoding = "UTF-8")
 bib_keys <- sub("^@[A-Za-z]+\\{([^,]+),.*$", "\\1", grep("^@", bib, value = TRUE))
 orig_idx <- grep("^\\s*origtext = \\{", bib)
-bib_orig <- sub("^\\s*origtext = \\{(.*)\\}$", "\\1", bib[orig_idx])
+bib_orig <- sub("^\\s*origtext = \\{(.*)\\},?\\s*$", "\\1", bib[orig_idx])
 stopifnot(length(bib_keys) == length(bib_orig), !anyDuplicated(bib_keys))
 
 normalise <- function(x) {

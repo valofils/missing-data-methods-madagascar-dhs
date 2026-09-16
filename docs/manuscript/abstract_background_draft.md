@@ -50,9 +50,8 @@ Child undernutrition remains one of the largest contributors to child mortality 
 deficits in health, schooling and earnings [32,33]. Stunting, or low height-for-age, affects about one
 in five children under 5 worldwide, and progress is uneven both between and within countries [34,35].
 Reducing it is a global commitment under the World Health Assembly targets and the Sustainable
-Development Goals [36]. In Madagascar, 40% of children under 5 are stunted, among the highest
-prevalences in the world **[CONFIRM ranking against the 2023 joint malnutrition estimates]**, and
-regional prevalence ranges from about 22% to 52% [1].
+Development Goals [36]. In Madagascar, 40% of children under 5 are stunted [1], nearly twice the
+global prevalence of 22.3% [34], and regional prevalence ranges from about 22% to 52% [1].
 
 Because national averages hide this heterogeneity, nutrition programmes are increasingly targeted
 subnationally, and the evidence for those decisions comes almost entirely from household surveys,

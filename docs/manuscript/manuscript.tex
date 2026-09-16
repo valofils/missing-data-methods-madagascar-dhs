@@ -24,7 +24,7 @@
 \setlength{\parindent}{0pt}
 \linespread{1.25}
 \title{Missing-data methods and equity estimates of child undernutrition: a methodological study using the 2021 Madagascar Demographic and Health Survey}
-\author{[CONFIRM author list and affiliations]}
+\author{[Author name]\\[2pt]\small [Affiliation]\\[2pt]\small\texttt{valofils@gmail.com}}
 \date{Draft compiled \today}
 \begin{document}
 \linenumbers
@@ -86,10 +86,9 @@ and progress is uneven both between and within countries
 \cite{unicef2023levels,victora2021revisiting}. Reducing it is a global
 commitment under the World Health Assembly targets and the Sustainable
 Development Goals \cite{who2014global}. In Madagascar, 40\% of children
-under 5 are stunted, among the highest prevalences in the world
-\textbf{{[}CONFIRM ranking against the 2023 joint malnutrition
-estimates{]}}, and regional prevalence ranges from about 22\% to 52\%
-\cite{instat2022edsmd}.
+under 5 are stunted \cite{instat2022edsmd}, nearly twice the global
+prevalence of 22.3\% \cite{unicef2023levels}, and regional prevalence
+ranges from about 22\% to 52\% \cite{instat2022edsmd}.
 
 Because national averages hide this heterogeneity, nutrition programmes
 are increasingly targeted subnationally, and the evidence for those
@@ -185,9 +184,9 @@ enumeration area, and 20,510 households were interviewed
 under 5 years were weighed and measured \cite{instat2022edsmd}.
 Fieldwork, launched in March 2020 and suspended because of the COVID-19
 pandemic, restarted on 3 March 2021 and lasted 143 days
-\cite{instat2022edsmd}. \textbf{{[}CONFIRM whether data from the 56
-clusters completed in March 2020 are included in the released file and
-whether this needs mention.{]}}
+\cite{instat2022edsmd}. All 650 clusters in the released dataset were
+interviewed between March and July 2021: the 56 clusters completed
+before the 2020 suspension are not part of it.
 
 \subsection{Study population and
 outcomes}\label{study-population-and-outcomes}
@@ -455,9 +454,10 @@ and gt 1.3.0; package versions are recorded with renv. The global random
 seed was 20210301. The complete pipeline, from reading the recode files
 to producing every table and figure, is scripted; apart from the
 published reference values used for validation, no number was entered by
-hand. Analysis code is available at \textbf{{[}CONFIRM repository
-URL{]}}; the DHS microdata are available from The DHS Program on
-registration and are not redistributed.
+hand. Analysis code is available at
+https://github.com/valofils/missing-data-methods-madagascar-dhs; the DHS
+microdata are available from The DHS Program on registration and are not
+redistributed.
 
 \section{Results}\label{results}
 
@@ -536,8 +536,7 @@ values were below $-$2, compared with 39.3\% of observed values
 (unweighted). For children with flagged HAZ, the figures were 38.9\% and
 41.7\%. For WHZ, 8.4\% (MI-PMM) and 7.1\% (MI-RF) of imputed values for
 unmeasured children were below $-$2, against 7.8\% of observed values.
-Chains for both MI methods mixed well (Additional file 1
-\textbf{{[}CONFIRM numbering{]}}).
+Chains for both MI methods mixed well.
 
 Excluding flagged children from the target population left conclusions
 unchanged (Table S2). National estimates changed by about 0.05 pp or
@@ -737,8 +736,8 @@ treatment of missing data (Table S4).
 In the 2021 Madagascar DHS, the choice of missing-data method barely
 affected estimates of child undernutrition. National stunting and
 wasting prevalence under inverse probability weighting and two forms of
-multiple imputation differed from complete-case estimates by a few
-hundredths of a percentage point, and CIs were practically identical.
+multiple imputation differed from complete-case estimates by no more
+than 0.03 percentage points, and CIs were practically identical.
 Subgroup estimates moved more, by up to 1.6 percentage points for
 regional stunting, but concordance between regional and wealth-quintile
 rankings was very high. The five worst-affected regions were identical
@@ -940,8 +939,8 @@ The study also has limitations:
 \item
   \textbf{Variance estimation.} IPW treated estimated weights as fixed.
   MI used 20 imputations, and we did not quantify the Monte Carlo error
-  of MI point estimates, so differences of a few hundredths of a
-  percentage point between methods should not be interpreted.
+  of MI point estimates, so differences between methods smaller than
+  about 0.05 percentage points should not be interpreted.
 \item
   \textbf{Ranking analysis.} The top-five threshold is a convenient
   illustration, not a policy rule, and simulated rankings of wealth
@@ -981,10 +980,10 @@ secondary analysis of anonymised survey data. The EDSMD-V 2021 protocol,
 including biomarker collection, was reviewed and approved by the
 Biomedical Research Ethics Committee of the Ministry of Public Health of
 Madagascar and by the ICF ethics committee, and informed consent was
-obtained before biomarker measurement \cite{instat2022edsmd}.
-\textbf{{[}CONFIRM wording against DHS standard consent procedures and
-journal requirements.{]}} Data were obtained from The DHS Program under
-its terms of use.
+obtained before biomarker measurement, as described in the survey report
+\cite{instat2022edsmd}. Data were obtained from The DHS Program under
+its terms of use. The present analysis used anonymised data and required
+no additional ethical approval.
 
 \clearpage
 \bibliographystyle{vancouver}

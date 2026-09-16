@@ -62,7 +62,7 @@ values resembled the observed distribution. Among children with missing HAZ, 41.
 (MI-RF) of imputed values were below −2, compared with 39.3% of observed values (unweighted). For
 children with flagged HAZ, the figures were 38.9% and 41.7%. For WHZ, 8.4% (MI-PMM) and 7.1% (MI-RF) of
 imputed values for unmeasured children were below −2, against 7.8% of observed values.
-Chains for both MI methods mixed well (Additional file 1 **[CONFIRM numbering]**).
+Chains for both MI methods mixed well.
 
 Excluding flagged children from the target population left conclusions unchanged (Table S2). National
 estimates changed by about 0.05 pp or less for any method, and subgroup estimates by at most 0.8 pp.

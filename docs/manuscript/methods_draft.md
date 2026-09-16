@@ -28,8 +28,8 @@ probability proportional to size; in the second stage, 34 households were select
 equal probability in each enumeration area, and 20,510 households were interviewed [1]. In a random
 half of households, all children under 5 years were weighed and measured [1]. Fieldwork, launched in
 March 2020 and suspended because of the COVID-19 pandemic, restarted on 3 March 2021 and lasted
-143 days [1]. **[CONFIRM whether data from the 56 clusters completed in March 2020 are included in the
-released file and whether this needs mention.]**
+143 days [1]. All 650 clusters in the released dataset were interviewed between March and July 2021:
+the 56 clusters completed before the 2020 suspension are not part of it.
 
 ### Study population and outcomes
 
@@ -206,7 +206,7 @@ haven 2.5.5, dplyr 1.2.1, ggplot2 4.0.2 and gt 1.3.0; package versions are recor
 global random seed was 20210301. The complete pipeline, from reading the recode files to producing every
 table and figure, is scripted; apart from the published reference values used for validation, no number
 was entered by hand. Analysis code is available at
-**[CONFIRM repository URL]**; the DHS microdata are available from The DHS Program on registration and
+https://github.com/valofils/missing-data-methods-madagascar-dhs; the DHS microdata are available from The DHS Program on registration and
 are not redistributed.
 
 ## Declarations (excerpt)
@@ -214,9 +214,9 @@ are not redistributed.
 **Ethics approval and consent to participate.** This study is a secondary analysis of anonymised
 survey data. The EDSMD-V 2021 protocol, including biomarker collection, was reviewed and approved by the
 Biomedical Research Ethics Committee of the Ministry of Public Health of Madagascar and by the ICF
-ethics committee, and informed consent was obtained before biomarker measurement [1].
-**[CONFIRM wording against DHS standard consent procedures and journal requirements.]** Data were
-obtained from The DHS Program under its terms of use.
+ethics committee, and informed consent was obtained before biomarker measurement, as described in the
+survey report [1]. Data were obtained from The DHS Program under its terms of use. The present
+analysis used anonymised data and required no additional ethical approval.
 
 ## References
 

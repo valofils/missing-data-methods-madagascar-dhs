@@ -19,8 +19,8 @@ date: "Draft of 13 September 2026 — for author review"
 
 In the 2021 Madagascar DHS, the choice of missing-data method barely affected estimates of child
 undernutrition. National stunting and wasting prevalence under inverse probability weighting and two
-forms of multiple imputation differed from complete-case estimates by a few hundredths of a
-percentage point, and CIs were practically identical. Subgroup estimates moved more, by up to
+forms of multiple imputation differed from complete-case estimates by no more than 0.03 percentage
+points, and CIs were practically identical. Subgroup estimates moved more, by up to
 1.6 percentage points for regional stunting, but concordance between regional and wealth-quintile
 rankings was very high. The five worst-affected regions were identical under CCA, IPW, MI-PMM and
 MI-RF. The two changes to that set occurred only when analysis was restricted to children with complete
@@ -153,8 +153,8 @@ The study also has limitations:
   cluster-level random effects, which may slightly understate between-cluster variation in imputed
   values. Weight-for-age was excluded to achieve convergence.
 - **Variance estimation.** IPW treated estimated weights as fixed. MI used 20 imputations, and we did not
-  quantify the Monte Carlo error of MI point estimates, so differences of a few hundredths of a
-  percentage point between methods should not be interpreted.
+  quantify the Monte Carlo error of MI point estimates, so differences between methods smaller than
+  about 0.05 percentage points should not be interpreted.
 - **Ranking analysis.** The top-five threshold is a convenient illustration, not a policy rule, and
   simulated rankings of wealth quintiles assumed independence across quintiles.
 - **Survey scope.** The survey's 23 domains predate the division of Vatovavy Fitovinany into two

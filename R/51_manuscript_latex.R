@@ -20,6 +20,11 @@ stopifnot(file.exists(md_file))
 TITLE <- paste("Missing-data methods and equity estimates of child undernutrition:",
                "a methodological study using the 2021 Madagascar Demographic and Health Survey")
 
+# Sole author of the manuscript
+AUTHOR      <- "[Author name]"
+AFFILIATION <- "[Affiliation]"
+EMAIL       <- "valofils@gmail.com"
+
 # Tables and figures, in the order they should appear at the end of the manuscript
 TABLES <- c("table1_sample_missingness", "table2_prevalence_by_method", "table3_simulation",
             "tableS2_prevalence_sensitivity", "tableS3_simulation_full",
@@ -168,7 +173,9 @@ preamble <- c(
   "\\setlength{\\parskip}{0.5em}", "\\setlength{\\parindent}{0pt}",
   "\\linespread{1.25}",
   paste0("\\title{", TITLE, "}"),
-  "\\author{[CONFIRM author list and affiliations]}",
+  # single author; fill in AUTHOR/AFFILIATION below
+  paste0("\\author{", AUTHOR, "\\\\[2pt]\\small ", AFFILIATION,
+         "\\\\[2pt]\\small\\texttt{", EMAIL, "}}"),
   "\\date{Draft compiled \\today}",
   "\\begin{document}",
   "\\linenumbers",

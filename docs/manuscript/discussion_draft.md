@@ -6,15 +6,12 @@ date: "Draft of 13 September 2026 — for author review"
 
 > **Drafting notes (delete before submission).**
 >
-> 1. **RQ3 is not yet written.** The full simulation is still running. Paragraphs marked
->    **[PENDING RQ3]** state only what the simulation was designed to test; they contain no findings
->    and must be rewritten from `rq3_performance_national_full.csv` and the related tables. The pilot
->    (20 replicates per scenario) is not reportable and is deliberately not used here.
-> 2. RQ1/RQ2 statements are consistent with `results_rq1_rq2_draft.md`; numbers are repeated only
->    where needed for interpretation.
-> 3. References continue the numbering of the Methods draft (1–20) and must be renumbered in order of
+> 1. RQ1/RQ2 statements are consistent with `results_rq1_rq2_draft.md` and RQ3 statements with
+>    `results_rq3_draft.md` (full run: 12 scenarios x 500 replicates, completed 16 September 2026).
+>    Numbers are repeated only where needed for interpretation.
+> 2. References continue the numbering of the Methods draft (1-20) and must be renumbered in order of
 >    first citation when the manuscript is assembled. **Verify every reference before submission.**
-> 4. Items marked **[CONFIRM]** need an author decision.
+> 3. Items marked **[CONFIRM]** need an author decision.
 
 ## Discussion
 
@@ -38,9 +35,15 @@ method were precisely those with the most uncertain rank. For decisions about ge
 the uncertainty inherent in ranking 23 survey domains outweighed the choice of missing-data method in
 this survey.
 
-**[PENDING RQ3]** *Summarise simulation findings here: bias and coverage of each method under MCAR,
-calibrated MAR, strong MAR and MNAR at 10–50% missingness, and whether regional rankings were
-recovered. Do not draft until the full run is summarised.*
+The simulation showed when that agreement can be expected and when it cannot. Under MCAR and under
+the mechanism calibrated to the survey's own missingness, all four methods were essentially unbiased
+at 10-50% missingness, reproducing what we observed empirically. Under strong MAR, where missingness
+depended on covariate-predicted undernutrition risk, the methods diverged sharply: at 50% missingness
+complete-case analysis under-estimated stunting by 3.68 pp with 11% CI coverage, IPW was unbiased
+(-0.04 pp) with 94.8% coverage, and multiple imputation removed most but not all of the bias
+(-0.90 pp for MI-PMM, -1.69 pp for MI-RF). Under MNAR no method recovered the truth: all were biased
+by about -10 pp at 50% missingness with zero coverage. Recovery of the regional ranking, by contrast,
+was poor in every scenario, including with complete data.
 
 ### Why the methods agreed
 
@@ -70,9 +73,13 @@ be demonstrated, not assumed, particularly for subnational estimates. A framewor
 which asks analysts to state the plausible missingness mechanisms and check the robustness of
 conclusions, fits this purpose well [23].
 
-**[PENDING RQ3]** *Relate the simulation results to the observed-data findings, for example whether
-the calibrated MAR scenario reproduced the near-zero bias observed empirically, and whether IPW and MI
-removed bias under strong MAR as expected in principle. Do not draft until results exist.*
+The simulation supports this reading. The mechanism calibrated to the survey's own missingness
+produced almost no bias in complete-case estimates (at most 0.09 pp for stunting at 50% missingness),
+which is why the methods agreed on the observed data. Selective missingness only became consequential
+when it was tied to the outcome's own predictors: the strong-MAR mechanism, with the same structure
+and strength but driven by predicted undernutrition risk, produced complete-case bias of -2.18 pp at
+30% missingness. The practical implication is that the observed agreement is a property of this
+survey's missingness pattern, not a general result.
 
 ### Flagged measurements
 
@@ -105,13 +112,17 @@ subnational units.
    values, such as maternal characteristics for children whose mother lives elsewhere, should be coded
    as such, not treated as missing.
 
+4. **Prefer response weighting, or imputation with well-calibrated variance, when missingness is
+   selective.** In the simulation IPW was the only method that stayed unbiased with nominal coverage
+   under strong MAR, while both imputation approaches retained residual bias. MI-RF additionally
+   understated uncertainty: its standard errors were 13-19% too small in the highest-missingness
+   scenarios, and coverage fell to 63% under strong MAR at 50% missingness. Where random-forest
+   imputation is used, the number of trees should be checked: raising it from 10 (the mice default)
+   to 50 restored calibration in our sub-study, though it did not remove the bias.
+
 Where ranking precision is itself the problem, borrowing strength across areas through small-area
 estimation methods may be more useful than refining the treatment of a few percent of missing
 outcomes [29].
-
-**[PENDING RQ3]** *If the simulation shows material bias or undercoverage for any method under
-plausible mechanisms, add the corresponding recommendation here, for example on MI-RF variance or on
-MNAR sensitivity analysis.*
 
 ### Strengths and limitations
 
@@ -134,8 +145,10 @@ The study also has limitations:
   more or less undernourished than similar children who were measured. The observed-data analyses
   therefore compare methods that share this assumption; they do not establish that any is unbiased.
   Sensitivity analyses that relax MAR, such as delta-adjusted multiple imputation [30] or selection
-  models [31], would complement this work. **[PENDING RQ3]** *Note what the MNAR simulation adds or
-  does not add here.*
+  models [31], would complement this work. The MNAR simulation quantifies what is at stake rather
+  than resolving it: when missingness depended on the z-score itself, every method was biased by a
+  similar amount and no confidence interval covered the truth at 30% missingness or above, with IPW
+  and MI reducing complete-case bias by at most 8%.
 - **Imputation model.** The model included stratum-defining variables and the design weight but not
   cluster-level random effects, which may slightly understate between-cluster variation in imputed
   values. Weight-for-age was excluded to achieve convergence.
@@ -146,9 +159,9 @@ The study also has limitations:
   simulated rankings of wealth quintiles assumed independence across quintiles.
 - **Survey scope.** The survey's 23 domains predate the division of Vatovavy Fitovinany into two
   regions. The findings come from a single survey with low missingness and may not transfer to surveys
-  with higher or differently structured missingness. **[PENDING RQ3]** *The simulation addresses higher
-  missingness; state here how far it does so, and note that the HAZ-only missingness pattern (1.2% of
-  children) was not simulated.*
+  with higher or differently structured missingness. The simulation extends the range of missingness
+  studied to 50%, but within the same pseudo-population and design, and it deletes HAZ and WHZ
+  together; the smaller HAZ-only pattern seen in the survey (1.2% of children) was not simulated.
 
 ### Conclusions
 
@@ -157,7 +170,11 @@ imputation gave practically identical national estimates of stunting and wasting
 subnational rankings. The worst-affected set changed only under restriction to complete covariates.
 Sampling uncertainty in subnational rankings was substantially larger than the effect of the
 missing-data method, and should be reported alongside any ranking used for targeting.
-**[PENDING RQ3]** *Add one or two sentences on the simulation findings.*
+In simulation, this equivalence held under missingness completely at random and under the mechanism
+calibrated to the survey, but not when missingness was strongly tied to covariate-predicted
+undernutrition risk: there only inverse probability weighting remained unbiased with valid coverage,
+while complete-case analysis was substantially biased. No method compensated for missingness that
+depended on the measurement itself.
 
 ## References (continuing from Methods, 1–20)
 

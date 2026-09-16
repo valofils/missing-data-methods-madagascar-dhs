@@ -35,9 +35,13 @@ f2 <- function(x) formatC(round(x, 2) + 0, format = "f", digits = 2)
 fmt_ci <- function(p, lo, hi) sprintf("%s (%s–%s)", f1(p), f1(lo), f1(hi))
 
 save_table <- function(g, data, name) {
-  write.csv(data, file.path(paths$tables, paste0(name, ".csv")), row.names = FALSE)
-  gtsave(g, file.path(paths$tables, paste0(name, ".html")))
-  if (CAN_DOCX) gtsave(g, file.path(paths$tables, paste0(name, ".docx")))
+  out <- function(ext) file.path(paths$tables, paste0(name, ext))
+  # gtsave -> pandoc fails ("Unknown output format doc") when the target .docx already
+  # exists, so remove previous outputs before writing
+  unlink(c(out(".csv"), out(".html"), out(".docx")))
+  write.csv(data, out(".csv"), row.names = FALSE)
+  gtsave(g, out(".html"))
+  if (CAN_DOCX) gtsave(g, out(".docx"))
   message("40: wrote ", name)
 }
 

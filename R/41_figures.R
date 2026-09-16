@@ -74,18 +74,17 @@ make_figure <- function(an) {
   p2 <- equity_panel(an, "wasted",  "region", "B  Wasting by region")
   p3 <- equity_panel(an, "stunted", "wealth", "C  Stunting by wealth quintile")
   p4 <- equity_panel(an, "wasted",  "wealth", "D  Wasting by wealth quintile")
+  # Captions are not drawn inside the image: they are written to figure_captions.csv and used by
+  # the manuscript (\caption in LaTeX), so each caption has a single source.
   (p1 | p2) / (p3 | p4) +
-    plot_layout(heights = c(23, 5.5), guides = "collect") +
-    plot_annotation(
-      caption = paste(
-        "Grey bars: 95% CI for complete-case analysis (CCA). Points: point estimates under each method.",
-        "Groups ordered by CCA prevalence; the dashed line marks the five worst-affected regions under CCA.",
-        "† Worst-affected (top-5) status differs between methods.",
-        "Methods: minimum Spearman ρ and top-k overlap across all method pairs. Sampling noise: median agreement between CCA point",
-        "ranks and ranks re-drawn from the CCA sampling distribution (10,000 draws).",
-        sep = "\n"),
-      theme = theme(plot.caption = element_text(colour = MUTED, hjust = 0, size = 7))) &
+    plot_layout(heights = c(23, 5.5), guides = "collect") &
     theme(legend.position = "bottom")
+}
+
+CAPTIONS <- list()
+add_caption <- function(name, title, caption) {
+  CAPTIONS[[name]] <<- data.frame(figure = name, title = title, caption = caption)
+  invisible(NULL)
 }
 
 save_fig <- function(p, name, w = 180, h = 205) {
@@ -97,6 +96,21 @@ save_fig <- function(p, name, w = 180, h = 205) {
 
 save_fig(make_figure("Main (flagged = missing)"), "figure1_equity_ranking")
 save_fig(make_figure("Sensitivity (flagged excluded)"), "figureS1_equity_ranking_sensitivity")
+
+equity_caption <- function(analysis_note) paste0(
+  "Prevalence of stunting and wasting by region and wealth quintile under each missing-data method",
+  analysis_note,
+  ". Grey bars: 95% confidence interval for complete-case analysis (CCA). Points: point estimates under ",
+  "each method. Groups are ordered by CCA prevalence; the dashed line marks the five worst-affected ",
+  "regions under CCA. Daggers mark subgroups whose top-5 worst-affected status differs between methods. ",
+  "Panel subtitles give the minimum Spearman correlation and top-k overlap across all method pairs, and ",
+  "the sampling-noise benchmark: the median agreement between the CCA point ranking and rankings re-drawn ",
+  "from the CCA sampling distribution (10,000 draws).")
+add_caption("figure1_equity_ranking",
+            "Subgroup prevalence and equity ranking under each missing-data method", equity_caption(""))
+add_caption("figureS1_equity_ranking_sensitivity",
+            "Subgroup prevalence and equity ranking, sensitivity analysis",
+            equity_caption(", excluding children with WHO-flagged z-scores from the target population"))
 
 # =============================================================================================
 # Figure 2 (RQ3): 95% CI coverage vs missingness rate, by mechanism; Figure S2: bias
@@ -164,16 +178,31 @@ if (!file.exists(perf_file)) {
   fig2 <- sim_panel("cov_pct", "cov_lo", "cov_hi", "Coverage of nominal 95% CI (%)", 95, band,
                     "Figure 2. Confidence-interval coverage by missingness mechanism and rate") +
     scale_y_continuous(breaks = c(0, 25, 50, 75, 95)) +
-    coord_cartesian(ylim = c(0, 100)) +   # zoom, not limits: keeps the reference band and bars
-    labs(caption = sprintf(paste0(
-      "%d replicates per scenario. Error bars: ±1.96 Monte Carlo SE. Shaded band: 95%% ± 1.96 MCSE expected under ",
-      "nominal coverage.\nComplete data: estimate before deletion (benchmark)."), n_sim))
+    coord_cartesian(ylim = c(0, 100))     # zoom, not limits: keeps the reference band and bars
   save_fig(fig2, paste0("figure2_simulation_coverage", if (SIM_MODE == "pilot") "_PILOT"), w = 180, h = 120)
 
   figS2 <- sim_panel("bias_pp", "bias_lo", "bias_hi", "Bias (percentage points)", 0, NULL,
-                     "Figure S2. Bias of national prevalence by missingness mechanism and rate") +
-    labs(caption = sprintf("%d replicates per scenario. Error bars: ±1.96 Monte Carlo SE. Y axes differ by outcome.",
-                           n_sim))
+                     "Figure S2. Bias of national prevalence by missingness mechanism and rate")
   save_fig(figS2, paste0("figureS2_simulation_bias", if (SIM_MODE == "pilot") "_PILOT"), w = 180, h = 120)
+
+  sim_caption <- function(what, extra) sprintf(paste0(
+    "%s of survey-weighted national prevalence of stunting (top row) and wasting (bottom row) by ",
+    "missingness mechanism (columns) and missingness rate, from %d simulation replicates per scenario. ",
+    "Error bars: plus or minus 1.96 Monte Carlo standard errors. Complete data: the estimate from each ",
+    "bootstrap sample before deletion (benchmark). %s"), what, n_sim, extra)
+  add_caption(paste0("figure2_simulation_coverage", if (SIM_MODE == "pilot") "_PILOT"),
+              "Confidence-interval coverage by missingness mechanism and rate",
+              sim_caption("Coverage of nominal 95% confidence intervals",
+                          paste("The shaded band is the range expected under nominal coverage",
+                                "(95% plus or minus 1.96 Monte Carlo standard errors).")))
+  add_caption(paste0("figureS2_simulation_bias", if (SIM_MODE == "pilot") "_PILOT"),
+              "Bias of national prevalence by missingness mechanism and rate",
+              sim_caption("Bias, in percentage points,", "Vertical scales differ between outcomes."))
+}
+
+caption_file <- file.path(paths$figures, "figure_captions.csv")
+if (length(CAPTIONS)) {
+  write.csv(do.call(rbind, CAPTIONS), caption_file, row.names = FALSE)
+  message("41: wrote ", basename(caption_file), " (", length(CAPTIONS), " captions)")
 }
 message("41: figures written to ", paths$figures)

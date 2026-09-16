@@ -10,6 +10,17 @@ data/derived/
 
 # Published reports kept locally for validation (large binaries; values transcribed to data/reference/)
 *.pdf
+# but figure PDFs are tracked: the LaTeX manuscript needs them to compile
+!outputs/figures/*.pdf
+
+# LaTeX build artefacts (manuscript.pdf is rebuilt by R/51_manuscript_latex.R)
+docs/manuscript/manuscript.pdf
+docs/manuscript/*.aux
+docs/manuscript/*.fdb_latexmk
+docs/manuscript/*.fls
+docs/manuscript/*.log
+docs/manuscript/*.out
+docs/manuscript/latexmk.log
 
 # R / renv
 .Rhistory

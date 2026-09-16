@@ -38,10 +38,14 @@ save_table <- function(g, data, name) {
   out <- function(ext) file.path(paths$tables, paste0(name, ext))
   # gtsave -> pandoc fails ("Unknown output format doc") when the target .docx already
   # exists, so remove previous outputs before writing
-  unlink(c(out(".csv"), out(".html"), out(".docx")))
+  unlink(c(out(".csv"), out(".html"), out(".docx"), out(".tex")))
   write.csv(data, out(".csv"), row.names = FALSE)
   gtsave(g, out(".html"))
   if (CAN_DOCX) gtsave(g, out(".docx"))
+  # LaTeX fragment for the manuscript build (R/51_manuscript_latex.R inputs these).
+  # Long tables must break across pages, with the header repeated.
+  g_tex <- g %>% tab_options(latex.use_longtable = TRUE, latex.header_repeat = TRUE)
+  writeLines(as.character(as_latex(g_tex)), out(".tex"), useBytes = TRUE)
   message("40: wrote ", name)
 }
 

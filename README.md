@@ -39,7 +39,7 @@ registered users from [The DHS Program](https://dhsprogram.com/data/). To reprod
 | `R/40_tables.R` | Tables 1–3 and S2–S5 (.docx, .html, .csv, .tex) |
 | `R/41_figures.R` | Figures 1, 2 and S1, S2 (+ `figure_captions.csv`) |
 | `R/50_assemble_manuscript.R` | assembles the section drafts, renumbering citations in order of first appearance |
-| `R/51_manuscript_latex.R` | builds `manuscript.tex` (tables, figures, bibliography) and compiles the PDF |
+| `R/51_manuscript_latex.R` | builds `manuscript.tex` (tables, figures, `references.bib` via vancouver.bst) and compiles the PDF |
 
 The manuscript is written as section drafts in `docs/manuscript/`; edit those, then re-run
 `50_assemble_manuscript.R` and `51_manuscript_latex.R`. Compiling the PDF needs a LaTeX

@@ -80,29 +80,33 @@ Demographic and Health Surveys; Madagascar
 
 Child undernutrition remains one of the largest contributors to child
 mortality and to lifelong deficits in health, schooling and earnings
-\cite{ref1,ref2}. Stunting, or low height-for-age, affects about one in
-five children under 5 worldwide, and progress is uneven both between and
-within countries \cite{ref3,ref4}. Reducing it is a global commitment
-under the World Health Assembly targets and the Sustainable Development
-Goals \cite{ref5}. In Madagascar, 40\% of children under 5 are stunted,
-among the highest prevalences in the world \textbf{{[}CONFIRM ranking
-against the 2023 joint malnutrition estimates{]}}, and regional
-prevalence ranges from about 22\% to 52\% \cite{ref6}.
+\cite{black2013maternal,deonis2016childhood}. Stunting, or low
+height-for-age, affects about one in five children under 5 worldwide,
+and progress is uneven both between and within countries
+\cite{unicef2023levels,victora2021revisiting}. Reducing it is a global
+commitment under the World Health Assembly targets and the Sustainable
+Development Goals \cite{who2014global}. In Madagascar, 40\% of children
+under 5 are stunted, among the highest prevalences in the world
+\textbf{{[}CONFIRM ranking against the 2023 joint malnutrition
+estimates{]}}, and regional prevalence ranges from about 22\% to 52\%
+\cite{instat2022edsmd}.
 
 Because national averages hide this heterogeneity, nutrition programmes
 are increasingly targeted subnationally, and the evidence for those
 decisions comes almost entirely from household surveys, above all the
-DHS \cite{ref7}. These surveys measure the height and weight of children
-in sampled households and publish prevalence by region and wealth
-quintile; the resulting tables are used to rank areas and prioritise
-resources. Two features of such estimates deserve more scrutiny than
-they usually receive. First, they carry sampling uncertainty that is
-substantial in small domains, so the ordering of regions is itself
-uncertain. Second, anthropometric data are never complete: children are
-absent, carers refuse, and some measurements are implausible and
-flagged. Reviews of DHS anthropometry show that incompleteness and
-flagging vary appreciably between surveys \cite{ref8,ref9}, and cleaning
-rules alone can shift estimated malnutrition prevalence \cite{ref10}.
+DHS \cite{corsi2012demographic}. These surveys measure the height and
+weight of children in sampled households and publish prevalence by
+region and wealth quintile; the resulting tables are used to rank areas
+and prioritise resources. Two features of such estimates deserve more
+scrutiny than they usually receive. First, they carry sampling
+uncertainty that is substantial in small domains, so the ordering of
+regions is itself uncertain. Second, anthropometric data are never
+complete: children are absent, carers refuse, and some measurements are
+implausible and flagged. Reviews of DHS anthropometry show that
+incompleteness and flagging vary appreciably between surveys
+\cite{assaf2015assessment,perumal2020anthropometric}, and cleaning rules
+alone can shift estimated malnutrition prevalence
+\cite{crowe2014effect}.
 
 How missing anthropometry is handled is therefore a methodological
 choice with potential consequences for who is identified as worst
@@ -110,24 +114,29 @@ affected. In practice the choice is usually implicit: survey reports
 present complete-case estimates restricted to children with valid
 measurements, which are unbiased only if missingness is unrelated to
 nutritional status given the design and the covariates used
-\cite{ref11}. Alternatives are well established in the statistical
-literature --- inverse probability weighting for nonresponse
-\cite{ref12} and multiple imputation, including machine-learning
-variants \cite{ref13,ref14,ref15} --- and guidance exists on reporting
-them \cite{ref16}. What is missing is evidence on what difference they
-make in this setting: for prevalence under a complex survey design, for
-the subnational ranking that drives targeting, and under missingness
-mechanisms realistic for anthropometry.
+\cite{little2019statistical}. Alternatives are well established in the
+statistical literature --- inverse probability weighting for nonresponse
+\cite{seaman2013review} and multiple imputation, including
+machine-learning variants
+\cite{vanbuuren2011mice,doove2014recursive,shah2014comparison} --- and
+guidance exists on reporting them \cite{lee2021framework}. What is
+missing is evidence on what difference they make in this setting: for
+prevalence under a complex survey design, for the subnational ranking
+that drives targeting, and under missingness mechanisms realistic for
+anthropometry.
 
 Related work has approached parts of this problem separately.
 Methodological studies of survey nonparticipation have concentrated on
 HIV prevalence, where selection models have been used to correct
-estimates for people who decline testing \cite{ref17}, and the
-statistical literature on ranking has long warned that league tables of
-institutions or areas are far less reliable than their point estimates
-suggest \cite{ref18,ref19}. Studies of DHS anthropometry, in turn, have
-focused on data quality: how often measurements are missing, flagged or
-heaped, and how cleaning rules change prevalence \cite{ref10,ref8,ref9}.
+estimates for people who decline testing
+\cite{barnighausen2011correcting}, and the statistical literature on
+ranking has long warned that league tables of institutions or areas are
+far less reliable than their point estimates suggest
+\cite{goldstein1996league,marshall1998reliability}. Studies of DHS
+anthropometry, in turn, have focused on data quality: how often
+measurements are missing, flagged or heaped, and how cleaning rules
+change prevalence
+\cite{crowe2014effect,assaf2015assessment,perumal2020anthropometric}.
 What has not been examined, to our knowledge, is the combination that
 matters for programme targeting: whether the analytical treatment of
 missing anthropometry changes which subnational groups a survey
@@ -158,12 +167,12 @@ We used data from the 2021 Madagascar Demographic and Health Survey
 (Enquête Démographique et de Santé à Madagascar, EDSMD-V), a nationally
 representative household survey conducted by the Institut National de la
 Statistique (INSTAT) with technical assistance from ICF through The DHS
-Program \cite{ref6}. The survey was designed to produce estimates for
-the nation, for urban and rural areas, and for 23 study domains: the 22
-administrative regions that existed at survey design (with Vatovavy and
-Fitovinany forming a single region), with the capital, Antananarivo, and
-the remainder of Analamanga region treated as separate domains
-\cite{ref6}.
+Program \cite{instat2022edsmd}. The survey was designed to produce
+estimates for the nation, for urban and rural areas, and for 23 study
+domains: the 22 administrative regions that existed at survey design
+(with Vatovavy and Fitovinany forming a single region), with the
+capital, Antananarivo, and the remainder of Analamanga region treated as
+separate domains \cite{instat2022edsmd}.
 
 The sample was a stratified two-stage cluster sample drawn from the 2018
 General Population and Housing Census (RGPH-3) frame. Each domain was
@@ -171,11 +180,12 @@ divided into urban and rural strata (the capital is urban only), giving
 45 sampling strata. In the first stage, 657 enumeration areas were
 selected with probability proportional to size; in the second stage, 34
 households were selected systematically with equal probability in each
-enumeration area, and 20,510 households were interviewed \cite{ref6}. In
-a random half of households, all children under 5 years were weighed and
-measured \cite{ref6}. Fieldwork, launched in March 2020 and suspended
-because of the COVID-19 pandemic, restarted on 3 March 2021 and lasted
-143 days \cite{ref6}. \textbf{{[}CONFIRM whether data from the 56
+enumeration area, and 20,510 households were interviewed
+\cite{instat2022edsmd}. In a random half of households, all children
+under 5 years were weighed and measured \cite{instat2022edsmd}.
+Fieldwork, launched in March 2020 and suspended because of the COVID-19
+pandemic, restarted on 3 March 2021 and lasted 143 days
+\cite{instat2022edsmd}. \textbf{{[}CONFIRM whether data from the 56
 clusters completed in March 2020 are included in the released file and
 whether this needs mention.{]}}
 
@@ -185,19 +195,20 @@ outcomes}\label{study-population-and-outcomes}
 The analytic population comprised de facto children aged 0--59 months
 (children who slept in the household the night before the interview)
 listed in the household member (PR) recode file, the population used for
-the survey's published nutrition indicators \cite{ref6,ref20} (n = 6,682
-children in 649 primary sampling units and 45 strata).
+the survey's published nutrition indicators
+\cite{instat2022edsmd,croft2023guide} (n = 6,682 children in 649 primary
+sampling units and 45 strata).
 
 Height-for-age (HAZ), weight-for-height (WHZ) and weight-for-age
 z-scores had been calculated by DHS using the WHO Child Growth Standards
-\cite{ref21}. The recode stores z-scores multiplied by 100 and uses
-separate codes for values that are missing (not measured) and for
+\cite{who2006child}. The recode stores z-scores multiplied by 100 and
+uses separate codes for values that are missing (not measured) and for
 measurements that fall outside plausible limits: 9996 (height out of
 plausible limits), 9997 (age out of plausible limits) and 9998
 (WHO-flagged z-score). We kept these two types of missingness distinct
 throughout. Stunting and severe stunting were defined as HAZ \textless{}
 $-$2 and \textless{} $-$3, and wasting and severe wasting as WHZ \textless{}
-$-$2 and \textless{} $-$3 \cite{ref21}.
+$-$2 and \textless{} $-$3 \cite{who2006child}.
 
 \subsection{Covariates and structural versus genuine
 missingness}\label{covariates-and-structural-versus-genuine-missingness}
@@ -224,16 +235,16 @@ know'' (n = 6).
 
 All estimates accounted for sampling weights (the DHS household weight
 divided by 10$^6$), stratification and clustering. Variances were estimated
-by Taylor linearisation \cite{ref22}, with primary sampling units nested
-within strata; single-PSU strata were handled by centring at the grand
-mean. Subgroup prevalences were estimated as domain estimates, retaining
-all sampling units in the variance calculation. Because many subgroup
-prevalences are low, 95\% confidence intervals (CIs) were constructed on
-the logit scale (delta-method variance) and back-transformed, with a t
-reference distribution on the design degrees of freedom (number of PSUs
-minus number of strata, 604). Associations between outcome missingness
-and covariates were assessed with design-based Rao--Scott tests
-\cite{ref23}.
+by Taylor linearisation \cite{lumley2004analysis}, with primary sampling
+units nested within strata; single-PSU strata were handled by centring
+at the grand mean. Subgroup prevalences were estimated as domain
+estimates, retaining all sampling units in the variance calculation.
+Because many subgroup prevalences are low, 95\% confidence intervals
+(CIs) were constructed on the logit scale (delta-method variance) and
+back-transformed, with a t reference distribution on the design degrees
+of freedom (number of PSUs minus number of strata, 604). Associations
+between outcome missingness and covariates were assessed with
+design-based Rao--Scott tests \cite{rao1984chisquared}.
 
 \textbf{Pipeline validation.} Before applying any missing-data method,
 we checked that the complete-case, design-based estimates reproduced the
@@ -243,8 +254,8 @@ by age, sex, residence, 23 regions and wealth quintile) to the published
 precision, the national unweighted and weighted denominators, and the 53
 stunting, wasting and underweight entries of the sampling-error appendix
 (national standard errors and $\pm$2 SE intervals for residence and the 23
-regions) \cite{ref6}. The analysis pipeline stops automatically if any
-of these checks fails.
+regions) \cite{instat2022edsmd}. The analysis pipeline stops
+automatically if any of these checks fails.
 
 \subsection{Estimand and missing-data methods
 (RQ1)}\label{estimand-and-missing-data-methods-rq1}
@@ -255,7 +266,7 @@ and wealth quintile. An outcome was considered missing when no valid
 z-score was available, whether because the child was not measured or
 because the value was flagged. We compared five approaches, chosen to
 span the estimators most often used for incomplete survey outcomes
-\cite{ref11}.
+\cite{little2019statistical}.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -263,7 +274,7 @@ span the estimators most often used for incomplete survey outcomes
 \item
   \textbf{Complete-case analysis (CCA).} Children with a valid z-score,
   analysed with the design weights. This is the definition used in DHS
-  reports \cite{ref20}.
+  reports \cite{croft2023guide}.
 \item
   \textbf{CCA with complete covariates.} As above, additionally
   requiring observed mother's age and education, representing the common
@@ -275,42 +286,45 @@ span the estimators most often used for incomplete survey outcomes
   survey-weighted logistic regression on region, residence, wealth
   quintile, sex, age band, mother's interview status, mother's education
   and household size. Each responding child's design weight was divided
-  by the fitted response probability \cite{ref12}. To avoid collinearity
-  with mother's interview status, children whose mother was not in the
-  household were assigned a constant education level in this model, and
-  the six ``don't know'' values were set to the modal category. Variance
-  estimation treated the estimated weights as fixed.
+  by the fitted response probability \cite{seaman2013review}. To avoid
+  collinearity with mother's interview status, children whose mother was
+  not in the household were assigned a constant education level in this
+  model, and the six ``don't know'' values were set to the modal
+  category. Variance estimation treated the estimated weights as fixed.
 \item
   \textbf{Multiple imputation by chained equations with predictive mean
-  matching (MI-PMM)} \cite{ref13,ref24}. HAZ, WHZ and mother's age were
-  imputed by predictive mean matching \cite{ref25}, and mother's
-  education by polytomous logistic regression. Imputation models
-  included all other variables, including the survey strata (region and
-  residence) and the log design weight, so that the imputation model
-  reflected the sampling design \cite{ref26}. Weight-for-age was
-  excluded from the imputation model: it is close to a deterministic
-  function of HAZ and WHZ and is usually missing jointly with them, and
-  its inclusion produced non-mixing chains with drifting variance in
-  diagnostic runs. Imputation models for the maternal variables were
-  fitted only to children whose mother lived in the household, so that
-  structurally inapplicable values were neither used as donors nor
-  imputed. We generated 20 imputed datasets with 20 iterations each;
-  convergence was assessed from trace plots of chain means and standard
-  deviations. Binary outcomes were derived from the imputed z-scores
-  after imputation.
+  matching (MI-PMM)} \cite{vanbuuren2011mice,white2011multiple}. HAZ,
+  WHZ and mother's age were imputed by predictive mean matching
+  \cite{morris2014tuning}, and mother's education by polytomous logistic
+  regression. Imputation models included all other variables, including
+  the survey strata (region and residence) and the log design weight, so
+  that the imputation model reflected the sampling design
+  \cite{reiter2006importance}. Weight-for-age was excluded from the
+  imputation model: it is close to a deterministic function of HAZ and
+  WHZ and is usually missing jointly with them, and its inclusion
+  produced non-mixing chains with drifting variance in diagnostic runs.
+  Imputation models for the maternal variables were fitted only to
+  children whose mother lived in the household, so that structurally
+  inapplicable values were neither used as donors nor imputed. We
+  generated 20 imputed datasets with 20 iterations each; convergence was
+  assessed from trace plots of chain means and standard deviations.
+  Binary outcomes were derived from the imputed z-scores after
+  imputation.
 \item
-  \textbf{Random-forest multiple imputation (MI-RF)} \cite{ref14,ref15}.
-  As for MI-PMM, but with every incompletely observed variable imputed
-  by random forests (100 trees; ranger implementation \cite{ref27}).
-  Unlike single random-forest imputation, this procedure propagates
-  imputation uncertainty through multiple imputed datasets.
+  \textbf{Random-forest multiple imputation (MI-RF)}
+  \cite{doove2014recursive,shah2014comparison}. As for MI-PMM, but with
+  every incompletely observed variable imputed by random forests (100
+  trees; ranger implementation \cite{wright2017ranger}). Unlike single
+  random-forest imputation, this procedure propagates imputation
+  uncertainty through multiple imputed datasets.
 \end{enumerate}
 
 For both MI approaches, the survey design was applied to each completed
-dataset, and estimates were combined with Rubin's rules \cite{ref28} on
-the logit scale \cite{ref29}. Inference used Barnard--Rubin small-sample
-degrees of freedom \cite{ref30} with the design degrees of freedom as
-the complete-data value.
+dataset, and estimates were combined with Rubin's rules
+\cite{rubin1987multiple} on the logit scale
+\cite{marshall2009combining}. Inference used Barnard--Rubin small-sample
+degrees of freedom \cite{barnard1999small} with the design degrees of
+freedom as the complete-data value.
 
 \textbf{Sensitivity analysis.} Because implausible measurements may
 reflect measurement error, not genuinely extreme values, we repeated all
@@ -350,9 +364,9 @@ reordering was judged.
 
 The simulation study was planned and is reported following the ADEMP
 framework (aims, data-generating mechanisms, estimands, methods,
-performance measures) \cite{ref31}. The full protocol, including a
-documented amendment made after the pilot, is available with the
-analysis code.
+performance measures) \cite{morris2019using}. The full protocol,
+including a documented amendment made after the pilot, is available with
+the analysis code.
 
 \textbf{Aims.} To estimate the bias, precision and CI coverage of each
 method for survey-weighted stunting and wasting prevalence under MCAR,
@@ -363,16 +377,16 @@ ranking.
 the children with valid HAZ and WHZ and observed maternal covariates (n
 = 6,247), and its survey-weighted prevalences were taken as the true
 values. Each replicate proceeded in two steps. First, a new survey
-sample was drawn by the Rao--Wu rescaling bootstrap \cite{ref32}: within
-each stratum, n\_h $-$ 1 PSUs were drawn with replacement from the n\_h
-available and weights were rescaled, so that replicate-to-replicate
-variation reflects the complex sampling design as well as missingness.
-One stratum with only two PSUs was merged with the rural stratum of the
-same region for this purpose. Second, HAZ and WHZ were deleted jointly,
-mirroring the dominant pattern in the survey, where all 178 children
-with missing (non-flagged) WHZ had not been measured and also lacked
-HAZ. The probability of missingness followed a logistic model under four
-mechanisms:
+sample was drawn by the Rao--Wu rescaling bootstrap
+\cite{rao1988resampling}: within each stratum, n\_h $-$ 1 PSUs were drawn
+with replacement from the n\_h available and weights were rescaled, so
+that replicate-to-replicate variation reflects the complex sampling
+design as well as missingness. One stratum with only two PSUs was merged
+with the rural stratum of the same region for this purpose. Second, HAZ
+and WHZ were deleted jointly, mirroring the dominant pattern in the
+survey, where all 178 children with missing (non-flagged) WHZ had not
+been measured and also lacked HAZ. The probability of missingness
+followed a logistic model under four mechanisms:
 
 \begin{itemize}
 \tightlist
@@ -421,29 +435,29 @@ with 50 trees.
 \textbf{Performance measures.} Bias, relative bias, empirical and
 average model-based standard errors, their ratio, root mean squared
 error, 95\% CI coverage and mean CI width, each with Monte Carlo
-standard errors \cite{ref31}; and, for regions, mean absolute bias and
-coverage across subgroups, the mean Spearman correlation between
-estimated and true rankings, mean top-five overlap and the proportion of
-replicates recovering the true top five and the true worst-affected
-region. With 500 replicates per scenario, the Monte Carlo standard error
-of coverage is 0.97 percentage points at a true coverage of 95\% and at
-most 2.2 percentage points. Each replicate used its own random-number
-seed and was stored on completion, so that any replicate can be
-reproduced individually.
+standard errors \cite{morris2019using}; and, for regions, mean absolute
+bias and coverage across subgroups, the mean Spearman correlation
+between estimated and true rankings, mean top-five overlap and the
+proportion of replicates recovering the true top five and the true
+worst-affected region. With 500 replicates per scenario, the Monte Carlo
+standard error of coverage is 0.97 percentage points at a true coverage
+of 95\% and at most 2.2 percentage points. Each replicate used its own
+random-number seed and was stored on completion, so that any replicate
+can be reproduced individually.
 
 \subsection{Software and
 reproducibility}\label{software-and-reproducibility}
 
-Analyses were conducted in R 4.5.1 \cite{ref33} using survey 4.5
-\cite{ref22}, mice 3.19.0 \cite{ref13}, ranger 0.18.0 \cite{ref27},
-haven 2.5.5, dplyr 1.2.1, ggplot2 4.0.2 and gt 1.3.0; package versions
-are recorded with renv. The global random seed was 20210301. The
-complete pipeline, from reading the recode files to producing every
-table and figure, is scripted; apart from the published reference values
-used for validation, no number was entered by hand. Analysis code is
-available at \textbf{{[}CONFIRM repository URL{]}}; the DHS microdata
-are available from The DHS Program on registration and are not
-redistributed.
+Analyses were conducted in R 4.5.1 \cite{rcore2025r} using survey 4.5
+\cite{lumley2004analysis}, mice 3.19.0 \cite{vanbuuren2011mice}, ranger
+0.18.0 \cite{wright2017ranger}, haven 2.5.5, dplyr 1.2.1, ggplot2 4.0.2
+and gt 1.3.0; package versions are recorded with renv. The global random
+seed was 20210301. The complete pipeline, from reading the recode files
+to producing every table and figure, is scripted; apart from the
+published reference values used for validation, no number was entered by
+hand. Analysis code is available at \textbf{{[}CONFIRM repository
+URL{]}}; the DHS microdata are available from The DHS Program on
+registration and are not redistributed.
 
 \section{Results}\label{results}
 
@@ -790,11 +804,12 @@ subgroups where missingness is concentrated.
 These findings agree with guidance that the proportion of missing data
 alone is a poor guide to analysis strategy, and that complete-case
 analysis can be adequate when missingness is low and plausibly unrelated
-to the outcome given the design \cite{ref34,ref35}. They also show that
-such adequacy should be demonstrated, not assumed, particularly for
+to the outcome given the design
+\cite{hughes2019accounting,jakobsen2017when}. They also show that such
+adequacy should be demonstrated, not assumed, particularly for
 subnational estimates. A framework such as TARMOS, which asks analysts
 to state the plausible missingness mechanisms and check the robustness
-of conclusions, fits this purpose well \cite{ref16}.
+of conclusions, fits this purpose well \cite{lee2021framework}.
 
 The simulation supports this reading. The mechanism calibrated to the
 survey's own missingness produced almost no bias in complete-case
@@ -811,17 +826,17 @@ not a general result.
 
 Flagged z-scores are handled inconsistently in practice. DHS reports
 exclude them, and cleaning criteria are known to change malnutrition
-prevalence estimates \cite{ref10}. We treated them as a distinct form of
-missingness in the main analysis and excluded them in a sensitivity
-analysis. With 23 flagged HAZ and 26 flagged WHZ values among 6,682
-children, the choice made no material difference here: national
-estimates changed by about 0.05 percentage points or less. In surveys
-with poorer anthropometric data quality, where flag rates are higher
-\cite{ref8,ref9}, the choice could matter more. Imputing flagged values
-under MAR assumes that the plausible range of the true measurement can
-be predicted from covariates. That assumption is questionable if flags
-arise from extreme true values, and less so if they arise from recording
-error.
+prevalence estimates \cite{crowe2014effect}. We treated them as a
+distinct form of missingness in the main analysis and excluded them in a
+sensitivity analysis. With 23 flagged HAZ and 26 flagged WHZ values
+among 6,682 children, the choice made no material difference here:
+national estimates changed by about 0.05 percentage points or less. In
+surveys with poorer anthropometric data quality, where flag rates are
+higher \cite{assaf2015assessment,perumal2020anthropometric}, the choice
+could matter more. Imputing flagged values under MAR assumes that the
+plausible range of the true measurement can be predicted from
+covariates. That assumption is questionable if flags arise from extreme
+true values, and less so if they arise from recording error.
 
 \subsection{Implications for survey analysis and
 targeting}\label{implications-for-survey-analysis-and-targeting}
@@ -835,9 +850,10 @@ DHS-type surveys to rank subnational units.
   \textbf{Report rank uncertainty.} Point rankings of survey domains
   should be accompanied by probabilities of membership in the targeted
   set or by rank intervals, as has long been recommended for league
-  tables of institutional performance \cite{ref18,ref19}. In this
-  survey, even the region with the highest stunting prevalence had only
-  about a one-in-three probability of truly ranking first.
+  tables of institutional performance
+  \cite{goldstein1996league,marshall1998reliability}. In this survey,
+  even the region with the highest stunting prevalence had only about a
+  one-in-three probability of truly ranking first.
 \item
   \textbf{Check robustness at the subgroup level.} Missing-data
   sensitivity analyses should be reported for the subgroup estimates
@@ -869,7 +885,7 @@ DHS-type surveys to rank subnational units.
 Where ranking precision is itself the problem, borrowing strength across
 areas through small-area estimation methods may be more useful than
 refining the treatment of a few percent of missing outcomes
-\cite{ref36}.
+\cite{mercer2015space}.
 
 \subsection{Strengths and limitations}\label{strengths-and-limitations}
 
@@ -909,12 +925,13 @@ The study also has limitations:
   The observed-data analyses therefore compare methods that share this
   assumption; they do not establish that any is unbiased. Sensitivity
   analyses that relax MAR, such as delta-adjusted multiple imputation
-  \cite{ref37} or selection models \cite{ref17}, would complement this
-  work. The MNAR simulation quantifies what is at stake rather than
-  resolving it: when missingness depended on the z-score itself, every
-  method was biased by a similar amount and no confidence interval
-  covered the truth at 30\% missingness or above, with IPW and MI
-  reducing complete-case bias by at most 8\%.
+  \cite{leacy2017analyses} or selection models
+  \cite{barnighausen2011correcting}, would complement this work. The
+  MNAR simulation quantifies what is at stake rather than resolving it:
+  when missingness depended on the z-score itself, every method was
+  biased by a similar amount and no confidence interval covered the
+  truth at 30\% missingness or above, with IPW and MI reducing
+  complete-case bias by at most 8\%.
 \item
   \textbf{Imputation model.} The model included stratum-defining
   variables and the design weight but not cluster-level random effects,
@@ -964,51 +981,14 @@ secondary analysis of anonymised survey data. The EDSMD-V 2021 protocol,
 including biomarker collection, was reviewed and approved by the
 Biomedical Research Ethics Committee of the Ministry of Public Health of
 Madagascar and by the ICF ethics committee, and informed consent was
-obtained before biomarker measurement \cite{ref6}. \textbf{{[}CONFIRM
-wording against DHS standard consent procedures and journal
-requirements.{]}} Data were obtained from The DHS Program under its
-terms of use.
+obtained before biomarker measurement \cite{instat2022edsmd}.
+\textbf{{[}CONFIRM wording against DHS standard consent procedures and
+journal requirements.{]}} Data were obtained from The DHS Program under
+its terms of use.
 
 \clearpage
-\begin{thebibliography}{99}
-\bibitem{ref1} Black RE, Victora CG, Walker SP, Bhutta ZA, Christian P, de Onis M, et al. Maternal and child undernutrition and overweight in low-income and middle-income countries. Lancet. 2013;382(9890):427–51.
-\bibitem{ref2} de Onis M, Branca F. Childhood stunting: a global perspective. Matern Child Nutr. 2016;12(Suppl 1):12–26.
-\bibitem{ref3} UNICEF, World Health Organization, World Bank Group. Levels and trends in child malnutrition: UNICEF/WHO/World Bank Group joint child malnutrition estimates, key findings of the 2023 edition. Geneva: World Health Organization; 2023.
-\bibitem{ref4} Victora CG, Christian P, Vidaletti LP, Gatica-Domínguez G, Menon P, Black RE. Revisiting maternal and child undernutrition in low-income and middle-income countries: variable progress towards an unfinished agenda. Lancet. 2021;397(10282):1388–99.
-\bibitem{ref5} World Health Organization. Global nutrition targets 2025: stunting policy brief. Geneva: World Health Organization; 2014.
-\bibitem{ref6} Institut National de la Statistique (INSTAT), ICF. Enquête Démographique et de Santé à Madagascar, 2021. Antananarivo, Madagascar and Rockville, Maryland, USA: INSTAT and ICF; 2022.
-\bibitem{ref7} Corsi DJ, Neuman M, Finlay JE, Subramanian SV. Demographic and health surveys: a profile. Int J Epidemiol. 2012;41(6):1602–13.
-\bibitem{ref8} Assaf S, Kothari MT, Pullum T. An assessment of the quality of DHS anthropometric data, 2005–2014. DHS Methodological Reports No. 16. Rockville, Maryland, USA: ICF International; 2015.
-\bibitem{ref9} Perumal N, Namaste S, Qamar H, Aimone A, Bassani DG, Roth DE. Anthropometric data quality assessment in multisurvey studies of child growth. Am J Clin Nutr. 2020;112(Suppl 2):806S–815S.
-\bibitem{ref10} Crowe S, Seal A, Grijalva-Eternod C, Kerac M. Effect of nutrition survey 'cleaning criteria' on estimates of malnutrition prevalence and disease burden: secondary data analysis. PeerJ. 2014;2:e380.
-\bibitem{ref11} Little RJA, Rubin DB. Statistical analysis with missing data. 3rd ed. Hoboken, NJ: Wiley; 2019.
-\bibitem{ref12} Seaman SR, White IR. Review of inverse probability weighting for dealing with missing data. Stat Methods Med Res. 2013;22(3):278–95.
-\bibitem{ref13} van Buuren S, Groothuis-Oudshoorn K. mice: Multivariate Imputation by Chained Equations in R. J Stat Softw. 2011;45(3):1–67.
-\bibitem{ref14} Doove LL, Van Buuren S, Dusseldorp E. Recursive partitioning for missing data imputation in the presence of interaction effects. Comput Stat Data Anal. 2014;72:92–104.
-\bibitem{ref15} Shah AD, Bartlett JW, Carpenter J, Nicholas O, Hemingway H. Comparison of random forest and parametric imputation models for imputing missing data using MICE: a CALIBER study. Am J Epidemiol. 2014;179(6):764–74.
-\bibitem{ref16} Lee KJ, Tilling KM, Cornish RP, Little RJA, Bell ML, Goetghebeur E, et al. Framework for the treatment and reporting of missing data in observational studies: the Treatment And Reporting of Missing data in Observational Studies framework. J Clin Epidemiol. 2021;134:79–88.
-\bibitem{ref17} Bärnighausen T, Bor J, Wandira-Kazibwe S, Canning D. Correcting HIV prevalence estimates for survey nonparticipation using Heckman-type selection models. Epidemiology. 2011;22(1):27–35.
-\bibitem{ref18} Goldstein H, Spiegelhalter DJ. League tables and their limitations: statistical issues in comparisons of institutional performance. J R Stat Soc Ser A Stat Soc. 1996;159(3):385–443.
-\bibitem{ref19} Marshall EC, Spiegelhalter DJ. Reliability of league tables of in vitro fertilisation clinics: retrospective analysis of live birth rates. BMJ. 1998;316(7146):1701–5.
-\bibitem{ref20} Croft TN, Allen CK, Zachary BW, et al. Guide to DHS Statistics: DHS-8. Rockville, Maryland, USA: ICF; 2023.
-\bibitem{ref21} WHO Multicentre Growth Reference Study Group. WHO Child Growth Standards based on length/height, weight and age. Acta Paediatr Suppl. 2006;450:76–85.
-\bibitem{ref22} Lumley T. Analysis of complex survey samples. J Stat Softw. 2004;9(8):1–19.
-\bibitem{ref23} Rao JNK, Scott AJ. On chi-squared tests for multiway contingency tables with cell proportions estimated from survey data. Ann Stat. 1984;12(1):46–60.
-\bibitem{ref24} White IR, Royston P, Wood AM. Multiple imputation using chained equations: issues and guidance for practice. Stat Med. 2011;30(4):377–99.
-\bibitem{ref25} Morris TP, White IR, Royston P. Tuning multiple imputation by predictive mean matching and local residual draws. BMC Med Res Methodol. 2014;14:75.
-\bibitem{ref26} Reiter JP, Raghunathan TE, Kinney SK. The importance of modeling the sampling design in multiple imputation for missing data. Surv Methodol. 2006;32(2):143–9.
-\bibitem{ref27} Wright MN, Ziegler A. ranger: a fast implementation of random forests for high dimensional data in C++ and R. J Stat Softw. 2017;77(1):1–17.
-\bibitem{ref28} Rubin DB. Multiple imputation for nonresponse in surveys. New York: Wiley; 1987.
-\bibitem{ref29} Marshall A, Altman DG, Holder RL, Royston P. Combining estimates of interest in prognostic modelling studies after multiple imputation: current practice and guidelines. BMC Med Res Methodol. 2009;9:57.
-\bibitem{ref30} Barnard J, Rubin DB. Small-sample degrees of freedom with multiple imputation. Biometrika. 1999;86(4):948–55.
-\bibitem{ref31} Morris TP, White IR, Crowther MJ. Using simulation studies to evaluate statistical methods. Stat Med. 2019;38(11):2074–102.
-\bibitem{ref32} Rao JNK, Wu CFJ. Resampling inference with complex survey data. J Am Stat Assoc. 1988;83(401):231–41.
-\bibitem{ref33} R Core Team. R: a language and environment for statistical computing. Vienna, Austria: R Foundation for Statistical Computing; 2025.
-\bibitem{ref34} Hughes RA, Heron J, Sterne JAC, Tilling K. Accounting for missing data in statistical analyses: multiple imputation is not always the answer. Int J Epidemiol. 2019;48(4):1294–304.
-\bibitem{ref35} Jakobsen JC, Gluud C, Wetterslev J, Winkel P. When and how should multiple imputation be used for handling missing data in randomised clinical trials – a practical guide with flowcharts. BMC Med Res Methodol. 2017;17:162.
-\bibitem{ref36} Mercer LD, Wakefield J, Pantazis A, Lutambi AM, Masanja H, Clark S. Space–time smoothing of complex survey data: small area estimation for child mortality. Ann Appl Stat. 2015;9(4):1889–905.
-\bibitem{ref37} Leacy FP, Floyd S, Yates TA, White IR. Analyses of sensitivity to the missing-at-random assumption using multiple imputation with delta adjustment: application to a tuberculosis/HIV prevalence survey with incomplete HIV-status data. Am J Epidemiol. 2017;185(4):304–15.
-\end{thebibliography}
+\bibliographystyle{vancouver}
+\bibliography{references}
 
 \clearpage
 \section*{Tables}

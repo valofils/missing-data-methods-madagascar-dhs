@@ -28,3 +28,5 @@ docs/manuscript/latexmk.log
 .Rproj.user/
 renv/library/
 renv/staging/
+docs/manuscript/*.bbl
+docs/manuscript/*.blg
